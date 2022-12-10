@@ -17,7 +17,7 @@ function App() {
         </BrowserRouter>
       </>
 
-
+//pray for vika
   );
 }
 
