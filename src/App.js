@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+//import Home from "./pages/Home";
+import {BrowserRouter, RedirectFunction, Route, Routes} from "react-router-dom";
+//import NavigationBar from "./components/Navigation/NavigationBar";
+//import Architects from "./pages/Architects";
+//import Architect from "./pages/Architect";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Девочки, я люблю вас
-        </a>
-      </header>
-    </div>
+      <>
+        <BrowserRouter>
+          <div>
+            <p>
+              HUI
+            </p>
+          </div>
+        </BrowserRouter>
+      </>
+
+
   );
 }
 

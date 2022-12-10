@@ -1,0 +1,108 @@
+{
+  "baklanov_michail": {
+    "birthYear": "1914",
+    "deathYear": "1990",
+    "birthDate": "13.01.1914",
+    "deathDate": "23.01.1990",
+    "events": [
+      "1914 - 1932",
+      "1932 - 1936",
+      "1936 - 1940",
+      "1940 - 1944",
+      "1944 - 1950",
+      "1950 - 1990"
+    ],
+    "gallery" : {
+      "1.png" : "1",
+      "2.png" : "2",
+      "3.png" : "3"
+    },
+    "videoLink": "7CsnFSbpUqE"
+  },
+
+  "levin_leonid": {
+    "birthYear": "1936",
+    "deathYear": "2014",
+    "birthDate": "25.07.1936",
+    "deathDate": "01.03.2014",
+    "events": [
+      "1954 - 1960",
+      "1960 - 1970",
+      "1970 - 1991",
+      "1991 - 1997"
+    ],
+    "gallery" : {
+      "1.png" : "1",
+      "2.png" : "2",
+      "3.png" : "3",
+      "4.png" : "4",
+      "5.png" : "5",
+      "6.png" : "6"
+    },
+    "videoLink": "P2-yBJvcJUo"
+  },
+
+  "dubeikovsky_leon": {
+    "birthYear": "1869",
+    "deathYear": "1940",
+    "birthDate": "19.07.1869",
+    "deathDate": "06.11.1940",
+    "events": [
+      "1910 - 1916",
+      "1916 - 1917",
+      "1917 - 1919",
+      "1919 - 1922",
+      "1922 - 1933"
+    ],
+    "gallery" : {
+      "1.png" : "1",
+      "2.png" : "2",
+      "3.png" : "3"
+    },
+    "videoLink": "s-JIbZBMbRU"
+  },
+
+  "shabunevsky_stanislav": {
+    "birthYear": "1868",
+    "deathYear": "1937",
+    "birthDate": "02.12.1868",
+    "deathDate": "07.10.1937",
+    "events": [
+      "1897 - 1909",
+      "1909 - 1911",
+      "1919 - 1922",
+      "1923 - 1931",
+      "1931 - 1937"
+    ],
+    "gallery": {
+      "1.png": "1",
+      "2.png": "2",
+      "3.png": "3",
+      "4.png": "4",
+      "5.png": "5"
+    },
+    "videoLink": "a43rFmrY78c"
+  },
+
+  "grigoriev_yuriy": {
+    "birthYear": "1932",
+    "deathYear": "2019",
+    "birthDate": "29.05.1932",
+    "deathDate": "21.03.2019",
+    "events": [
+      "1932 - 1956",
+      "1956 - 1986",
+      "1986 - 1994",
+      "1994 - 2002",
+      "2002 - 2011",
+      "2011 - 2019"
+    ],
+    "gallery" : {
+      "1.png" : "1",
+      "2.png" : "2",
+      "3.png" : "3"
+    },
+    "videoLink": "KoCasp6SVck"
+  }
+
+}
