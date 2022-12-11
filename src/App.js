@@ -1,6 +1,7 @@
 import './App.css';
 //import Home from "./pages/Home";
 import {BrowserRouter, useParams, Route, Routes,Link} from "react-router-dom";
+import {useState} from 'react'
 //import NavigationBar from "./components/Navigation/NavigationBar";
 //import Architects from "./pages/Architects";
 //import Architect from "./pages/Architect";
@@ -110,11 +111,26 @@ function Card(){
 
     );
 }
-const List = () => (
+
+function List() {
+  const[value, setValue] = useState("");
+  const filteredPhotogr = PhotographersAPI.photographers.filter(photographer=>{
+    return photographer.name.toLowerCase().includes(value.toLowerCase());
+  })
+  console.log('Hi');
+  return(
   <div>
+    <form className="formSearch">
+      <input
+      type="text"
+      placeholder='Search for photographer'
+      onChange={(event)=> setValue(event.target.value)}
+      >
+      </input>
+    </form>
     <ul>
       {
-        PhotographersAPI.all().map(p => (
+          filteredPhotogr.map(p=>(
           <li key={p.number}>
             <Link to={`/list/${p.number}`}>{p.name}</Link>
           </li>
@@ -122,7 +138,8 @@ const List = () => (
       }
     </ul>
   </div>
-)
+  )
+}
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
@@ -154,20 +171,28 @@ const Main = () => (
 )
 
 const Header = () => (
-  <header >
-  <nav>
-    <ul className='Nav'>
-      <li><Link to='/'>Главная страница</Link></li>
-      <li><Link to='/list'>Фотографы</Link></li>
-    </ul>
+  <header className='header'>
+    <nav >
+      <img src={require(`./data/imgs/logo.png`)}></img>
+      <div className='header-links'>
+        <ul>
+          <li><Link to='/' className='Nav-link'>Главная страница</Link></li>
+          <li><Link to='/list' className='Nav-link'>Фотографы</Link></li>
+        </ul>
+      </div>
+      <div className='language'>
+        <h3>EN</h3>
+        <h3>RU</h3>
+      </div>
   </nav>
+  
 </header>
 )
 
 const Footer = () =>(
   <footer>
     <nav>
-      <ul>
+      <ul >
         <li>
            <img src={require(`./data/git_img/vi.png`)} alt=""/>
             <a href="https://github.com/Ejevika10">Виктория Лозюк</a>
