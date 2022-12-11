@@ -111,26 +111,11 @@ function Card(){
 
     );
 }
-
-function List() {
-  const[value, setValue] = useState("");
-  const filteredPhotogr = PhotographersAPI.photographers.filter(photographer=>{
-    return photographer.name.toLowerCase().includes(value.toLowerCase());
-  })
-  console.log('Hi');
-  return(
+const List = () => (
   <div>
-    <form className="formSearch">
-      <input
-      type="text"
-      placeholder='Search for photographer'
-      onChange={(event)=> setValue(event.target.value)}
-      >
-      </input>
-    </form>
     <ul>
       {
-          filteredPhotogr.map(p=>(
+        PhotographersAPI.all().map(p => (
           <li key={p.number}>
             <Link to={`/list/${p.number}`}>{p.name}</Link>
           </li>
@@ -138,8 +123,7 @@ function List() {
       }
     </ul>
   </div>
-  )
-}
+)
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
@@ -171,28 +155,20 @@ const Main = () => (
 )
 
 const Header = () => (
-  <header className='header'>
-    <nav >
-      <img src={require(`./data/imgs/logo.png`)}></img>
-      <div className='header-links'>
-        <ul>
-          <li><Link to='/' className='Nav-link'>Главная страница</Link></li>
-          <li><Link to='/list' className='Nav-link'>Фотографы</Link></li>
-        </ul>
-      </div>
-      <div className='language'>
-        <h3>EN</h3>
-        <h3>RU</h3>
-      </div>
+  <header >
+  <nav>
+    <ul className='Nav'>
+      <li><Link to='/'>Главная страница</Link></li>
+      <li><Link to='/list'>Фотографы</Link></li>
+    </ul>
   </nav>
-  
 </header>
 )
 
 const Footer = () =>(
   <footer>
     <nav>
-      <ul >
+      <ul>
         <li>
            <img src={require(`./data/git_img/vi.png`)} alt=""/>
             <a href="https://github.com/Ejevika10">Виктория Лозюк</a>
