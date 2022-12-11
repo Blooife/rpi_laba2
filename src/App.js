@@ -89,7 +89,7 @@ function Card(){
     <div>
       <img src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
       <h1>{photographer.name} (#{photographer.number})</h1>
-      
+      <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
       <Timeline lineColor={'#ddd'}>
 
       {
