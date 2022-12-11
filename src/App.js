@@ -78,30 +78,38 @@ const Main = () => (
 )
 
 const Header = () => (
-  <header >
-  <nav>
-    <ul className='Nav'>
-      <li><Link to='/'>Главная страница</Link></li>
-      <li><Link to='/list'>Фотографы</Link></li>
-    </ul>
+  <header className='header'>
+    <nav >
+      <img src={require(`./data/imgs/logo.png`)}></img>
+      <div className='header-links'>
+        <ul>
+          <li><Link to='/' className='Nav-link'>Главная страница</Link></li>
+          <li><Link to='/list' className='Nav-link'>Фотографы</Link></li>
+        </ul>
+      </div>
+      <div className='language'>
+        <h3>EN</h3>
+        <h3>RU</h3>
+      </div>
   </nav>
+  
 </header>
 )
 
 const Footer = () =>(
   <footer>
     <nav>
-      <ul>
+      <ul >
         <li>
-            <a href="https://github.com/Ejevika10">Виктоория Лозюк</a>
+            <a className='Footer' href="https://github.com/Ejevika10">Виктоория Лозюк</a>
             <h6>Ejevika10</h6>
         </li>
         <li>
-            <a href="https://github.com/KseniaHlebanova">Ксения Хлебанова</a>
+            <a className='Footer' href="https://github.com/KseniaHlebanova">Ксения Хлебанова</a>
             <h6>KseniaHlebanova</h6>
         </li>
         <li>
-            <a href='https://github.com/Blooife'>Саша Милковская</a>
+            <a className='Footer' href='https://github.com/Blooife'>Саша Милковская</a>
             <h6>Blooife</h6>
         </li>
       </ul>
