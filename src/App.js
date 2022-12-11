@@ -50,15 +50,15 @@ const PhotographersAPI = {
     gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
     videoLink: "7CsnFSbpUqE"},
 
-{number: 4, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
+{number: 4, birthYear: "1961",deathYear: "2022",birthDate: "29.09.1961",deathDate: "09.08.2022",
     events: [
-      {year:"1914 - 1932",description:""},
-      {year:"1932 - 1936",description:""},
-      {year:"1936 - 1940",description:""},
-      {year:"1940 - 1944",description:""},
-      {year:"1944 - 1950",description:""},
-      {year:"1950 - 1990",description:""}],
-    gallery : ["1.png","2.png","3.png"],
+      {year:"1961-1980",description:"Родился в семье рабочих. Отец - Владимир Николаевич Колтович(1937 - 1979). Мать - Инна Николаевна Колтович. В 1968 - 1977 годах учился в СШ №6 Минска. В 1980 году закончил Минское художественное училище по специальности "хоровое дирижирование"."},
+      {year:"1980 - 1982",description:"Служил в рядах Советской армии"},
+      {year:"1984 - 1987",description:"Работал фотографом в БелНИИП градостроительства"},
+      {year:"1987 - 1990",description:"Получил бронзовую медаль ВДНХ в Москве. Был начальником фотолаборатории в агенстве "Прапанова""},
+      {year:"1990 - 1993",description:"Работал фотографом в музее П. Бровки"},
+      {year:"1997 - 2022",description:"Работал фотографом на Минском художественном комбинате"}],
+    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
     videoLink: "7CsnFSbpUqE"},
 
     {number: 5, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
