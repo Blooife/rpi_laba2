@@ -77,11 +77,11 @@ const Main = () => (
 )
 
 const Header = () => (
-  <header>
+  <header >
   <nav>
-    <ul>
-      <li><Link to='/'>Home</Link></li>
-      <li><Link to='/list'>List</Link></li>
+    <ul className='Nav'>
+      <li><Link to='/'>Главная страница</Link></li>
+      <li><Link to='/list'>Фотографы</Link></li>
     </ul>
   </nav>
 </header>
