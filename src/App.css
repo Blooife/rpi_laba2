@@ -1,3 +1,20 @@
-header{
-    background-color: blue;
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/lato-regular.ttf") format("TrueType");
+    font-style: normal;
+    font-weight: normal; }
+.Nav{
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    
+}
+.Nav>li{
+    font-family: LatoRegular;
+    text-decoration: none;
+    color:aliceblue;
+}
+li{
+    list-style-type: none;
+   
 }
