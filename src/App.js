@@ -1,103 +1,91 @@
 //import './App.css';
 //import Home from "./pages/Home";
-import {BrowserRouter, RedirectFunction, Route, Routes,Link} from "react-router-dom";
+import {BrowserRouter, useParams, Route, Routes,Link} from "react-router-dom";
 //import NavigationBar from "./components/Navigation/NavigationBar";
 //import Architects from "./pages/Architects";
 //import Architect from "./pages/Architect";
 
-const PlayerAPI = {
-  players: [
-    { number: 1, name: "Ben Blocker", position: "G" },
-    { number: 2, name: "Dave Defender", position: "D" },
-    { number: 3, name: "Sam Sweeper", position: "D" },
-    { number: 4, name: "Matt Midfielder", position: "M" },
-    { number: 5, name: "William Winger", position: "M" },
-    { number: 6, name: "Fillipe Forward", position: "F" }
+const PhotographersAPI = {
+  photographers: [
+    { number: 1, name: "Антон Мотолько"},
+    { number: 2, name: "Бенедикт Генрик Тышкевич"},
+    { number: 3, name: "Лев Дашкевич"},
+    { number: 4, name: "Сергей Колтович"},
+    { number: 5, name: "Ян Булгак"},
+    
   ],
-  all: function() { return this.players},
-  get: function(id) {
-    const isPlayer = p => p.number === id
-    return this.players.find(isPlayer)
-  }
+  all: function() { return this.photographers},
 }
 
-// The FullRoster iterates over all of the players and creates
-// a link to their profile page.
-const FullRoster = () => (
+
+function Card(){
+    const params = useParams();
+    const id = params.number;
+    
+    const photographer = PhotographersAPI.photographers.find(p=>p.number == id);
+    if(photographer===undefined){
+    return <div>Sorry, but the photographer was not found</div>
+    }
+    return (
+    <div>
+      <h1>{photographer.name} (#{photographer.number})</h1>
+      <Link to='/List'>Вернуться к списку</Link>
+    </div>
+    );
+}
+
+const List = () => (
   <div>
     <ul>
       {
-        PlayerAPI.all().map(p => (
+        PhotographersAPI.all().map(p => (
           <li key={p.number}>
-            <Link to={`/roster/${p.number}`}>{p.name}</Link>
+            <Link to={`/list/${p.number}`}>{p.name}</Link>
           </li>
         ))
       }
     </ul>
   </div>
 )
-
-// The Player looks up the player using the number parsed from
-// the URL's pathname. If no player is found with the given
-// number, then a "player not found" message is displayed.
-
-// The Roster component matches one of two different routes
-// depending on the full pathname
-
-const Schedule = () => (
-  <div>
-    <ul>
-      <li>6/5 @ Evergreens</li>
-      <li>6/8 vs Kickers</li>
-      <li>6/14 @ United</li>
-    </ul>
-  </div>
-)
-function Player(props) {
-  return(
-    <div>
-      <h1>Player!</h1>
-      <Link to='/roster'>Back</Link>
-  </div>
-  );
-  
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
 }
 
-const Home = () => (
-  <div>
-    <h1>Welcome to the Tornadoes Website!</h1>
+function Home(){
+  let dayPh = getRandomInt(1,6);
+  const photographer = PhotographersAPI.photographers.find(p=>p.number == dayPh);
+  return (
+    <div>
+    <h1>Фотографы Беларуси</h1>
+    <h2>Фотограф дня: </h2>
+    
+    <div>
+      <h1>{photographer.name} (#{photographer.number})</h1>
+    </div>
   </div>
-)
+  );
+}
 
-// The Main component renders one of the three provided
-// Routes (provided that one matches). Both the /roster
-// and /schedule routes will match any pathname that starts
-// with /roster or /schedule. The / route will only match
-// when the pathname is exactly the string "/"
 const Main = () => (
   <main>
     <Routes>
-            <Route path="/roster" element={<FullRoster />} />
-            <Route path="/roster/:number" element={<Player number/>} />
-            <Route path="/schedule" element={<Schedule />} />
-            <Route path="/" element={<Home />}>
+            <Route path="/list" element={<List />} />
+            <Route path="/list/:number" element={<Card />} />
+            <Route path="*" element={<Home />}>
             </Route>
     </Routes>
   </main>
 )
 
-// The Header creates links that can be used to navigate
-// between routes.
 const Header = () => (
   <header>
-    <nav>
-      <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/roster'>Roster</Link></li>
-        <li><Link to='/schedule'>Schedule</Link></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <ul>
+      <li><Link to='/'>Home</Link></li>
+      <li><Link to='/list'>List</Link></li>
+    </ul>
+  </nav>
+</header>
 )
 
 function App() {
