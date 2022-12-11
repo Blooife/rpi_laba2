@@ -17,15 +17,15 @@ const PhotographersAPI = {
     { number: 5, name: "Ян Булгак", fileName: "yan_bulgak"}
   ],
   phData: [
-    {number: 1, birthYear: "1988",deathYear: "",birthDate: "04.06.1988",deathDate: "",
+    {number: 1, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
     events: [
-      {year:"1988 - 2011",description:"Закончил в 2004 году гимназию №29 г.Минска. Учился в Белорусской академии связи, после в Институте предпринимательской деятельности. Работал фотографом. Сотрудничал с интернет-порталом TUT.BY"},
-      {year:"2011 - 2015",description:"В июле 2011 года был задержан во время молчаливой акции протеста в Минске."},
-      {year:"2015 - 2018",description:"В 2015 году получил премию «Чемпионы гражданского подполья' в номинации «Журналист года»."},
-      {year:"2018 - 2020",description:"Вместе с основателем магазина национальных товаров «Symbal.by» Павлом Белоусом и блоггером Эдуардом Пальчисом организовал праздничный концерт к столетию провозглашения БНР. Для проведения концерта организаторы собрали более 36 тысяч рублей на платформе «talaka.org»."},
-      {year:"2020 - 2021",description:"Переехал в Польшу. Создал &quot; телеграмм-канал «МотолькоПомоги», который находится на 11 месте по числу подписчиков среди всех белорусских каналов. Канал создавался для освещения бытовых проблем в городах Беларуси, политических событий."},
-      {year:"2021 - 2022",description:"Телеграмм-канал Антона Матолько был признан экстремистским по решению суда от 23 марта 2021 года. За создание такого формирования и членства в нем предусмотрена криминальная ответственность."}],
-    gallery : ["1.jpg","2.jpg","3.jpg"], videoLink: "7CsnFSbpUqE"},
+      {year:"1914 - 1932",description:""},
+      {year:"1932 - 1936",description:""},
+      {year:"1936 - 1940",description:""},
+      {year:"1940 - 1944",description:""},
+      {year:"1944 - 1950",description:""},
+      {year:"1950 - 1990",description:""}],
+    gallery : ["1.png","2.png","3.png"], videoLink: "7CsnFSbpUqE"},
 
     {number: 2, birthYear: "1852",deathYear: "1935",birthDate: "11.12.1852",deathDate: "1935",
     events: [
@@ -36,7 +36,8 @@ const PhotographersAPI = {
       {year:"1899 - 1935",description:"Его творчество пользовалась международным признанием, в 1899 году он получил золотую медаль на выставке в Берлине."},
       {year:"1935 - 1999",description:"Последние годы жизни Бенедикт Тышкевич провел на Лазурном берегу Франции, где и умер в 1935 году в возрасте 82 лет."},
       {year:"1999 - 2009",description:"Уцелевшие фотографии находятся в распоряжении музея Nicéphore Niepce в Шалон-сюр-Соне во Франции и были выставлены в Литве в 1999 году. В 2009 году в Национальном музее истории и культуры в Минске состоялась выставка фотографий Бенедикта Тышкевича."}],
-    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"], videoLink: "7CsnFSbpUqE"},
+
+    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"], videoLink: "7CsnFSbpUqE"},
 
     {number: 3, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
     events: [
@@ -49,7 +50,7 @@ const PhotographersAPI = {
     gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
     videoLink: "7CsnFSbpUqE"},
 
-    {number: 4, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
+{number: 4, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
     events: [
       {year:"1914 - 1932",description:""},
       {year:"1932 - 1936",description:""},
@@ -95,6 +96,8 @@ function Card(){
         phtData.events.map(p => (
           <TimelineItem
             dateText= {p.year} >
+            <h3>Title, Company</h3>
+            <h4>Subtitle</h4>
             <p>
               {p.description}
             </p>
@@ -109,11 +112,27 @@ function Card(){
 
     );
 }
-const List = () => (
+
+function List() {
+  const[value, setValue] = useState("");
+  const filteredPhotogr = PhotographersAPI.photographers.filter(photographer=>{
+    return photographer.name.toLowerCase().includes(value.toLowerCase());
+  })
+  console.log('Hi');
+  return(
+    
   <div>
+    <form className="formSearch">
+      <input
+      type="text"
+      placeholder='Search for photographer'
+      onChange={(event)=> setValue(event.target.value)}
+      >
+      </input>
+    </form>
     <ul>
       {
-        PhotographersAPI.all().map(p => (
+          filteredPhotogr.map(p=>(
           <li key={p.number}>
             <Link to={`/list/${p.number}`}>{p.name}</Link>
           </li>
@@ -121,7 +140,8 @@ const List = () => (
       }
     </ul>
   </div>
-)
+  )
+}
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
@@ -153,20 +173,28 @@ const Main = () => (
 )
 
 const Header = () => (
-  <header >
-  <nav>
-    <ul className='Nav'>
-      <li><Link to='/'>Главная страница</Link></li>
-      <li><Link to='/list'>Фотографы</Link></li>
-    </ul>
+  <header className='header'>
+    <nav >
+      <img src={require(`./data/imgs/logo.png`)}></img>
+      <div className='header-links'>
+        <ul>
+          <li><Link to='/' className='Nav-link'>Главная страница</Link></li>
+          <li><Link to='/list' className='Nav-link'>Фотографы</Link></li>
+        </ul>
+      </div>
+      <div className='language'>
+        <h3>EN</h3>
+        <h3>RU</h3>
+      </div>
   </nav>
+  
 </header>
 )
 
 const Footer = () =>(
   <footer>
     <nav>
-      <ul>
+      <ul >
         <li>
            <img src={require(`./data/git_img/vi.png`)} alt=""/>
             <a href="https://github.com/Ejevika10">Виктория Лозюк</a>
