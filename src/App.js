@@ -6,7 +6,7 @@ import {BrowserRouter, useParams, Route, Routes,Link} from "react-router-dom";
 //import Architect from "./pages/Architect";
 
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
-//<Timeline/>
+
 const PhotographersAPI = {
   photographers: [
     { number: 1, name: "Антон Мотолько", fileName: "anton_motolko"},
@@ -88,7 +88,49 @@ function Card(){
       <img src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
       <h1>{photographer.name} (#{photographer.number})</h1>
       <Link to='/List'>Вернуться к списку</Link>
-      <Timeline/>
+      <Timeline lineColor={'#ddd'}>
+
+  <TimelineItem
+    key="001"
+    dateText="11/2010 – Present"  >
+    <h3>Title, Company</h3>
+    <h4>Subtitle</h4>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+  </TimelineItem>
+  <TimelineItem
+    key="002"
+    dateText="04/2009 – 11/2010">
+    <h3 >Title, Company</h3>
+    <h4 >Subtitle</h4>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+  </TimelineItem>
+  <TimelineItem
+    key="003"
+    dateText="08/2008 – 11/2008">
+    <h3>Title, Company</h3>
+    <h4>Subtitle</h4>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+  </TimelineItem>
+</Timeline>
+
     </div>
 
     );
