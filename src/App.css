@@ -5,7 +5,7 @@
     font-weight: normal; }
 .header{
     height: 85px;
-    position: fixed;
+    /*position: fixed;*/
     z-index: 100;
     width: 100%;
     display: flex;
