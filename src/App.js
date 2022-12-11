@@ -13,6 +13,63 @@ const PhotographersAPI = {
     { number: 4, name: "Сергей Колтович", fileName: "sergei_koltovich"},
     { number: 5, name: "Ян Булгак", fileName: "yan_bulgak"}
   ],
+  phData: [
+    {number: 1, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
+    events: [
+      "1914 - 1932",
+      "1932 - 1936",
+      "1936 - 1940",
+      "1940 - 1944",
+      "1944 - 1950",
+      "1950 - 1990"],
+    gallery : ["1.png","2.png","3.png"],
+    videoLink: "7CsnFSbpUqE"},
+
+    {number: 2, birthYear: "1852",deathYear: "1935",birthDate: "11.12.1852",deathDate: "1935",
+    events: [
+      "1852 - 1874",
+      "1874 - 1876",
+      "1876 - 1894",
+      "1894 - 1899",
+      "1899 - 1935",
+      "1935 - 1999",
+      "1999 - 2009"],
+      gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
+    videoLink: "7CsnFSbpUqE"},
+
+    {number: 3, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
+    events: [
+      "1914 - 1932",
+      "1932 - 1936",
+      "1936 - 1940",
+      "1940 - 1944",
+      "1944 - 1950",
+      "1950 - 1990"],
+    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
+    videoLink: "7CsnFSbpUqE"},
+
+    {number: 4, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
+    events: [
+      "1914 - 1932",
+      "1932 - 1936",
+      "1936 - 1940",
+      "1940 - 1944",
+      "1944 - 1950",
+      "1950 - 1990"],
+    gallery : ["1.png","2.png","3.png"],
+    videoLink: "7CsnFSbpUqE"},
+
+    {number: 5, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
+    events: [
+      "1914 - 1932",
+      "1932 - 1936",
+      "1936 - 1940",
+      "1940 - 1944",
+      "1944 - 1950",
+      "1950 - 1990"],
+    gallery : ["1.png","2.png","3.png"],
+    videoLink: "7CsnFSbpUqE"},
+  ],
   all: function() { return this.photographers},
 }
 
