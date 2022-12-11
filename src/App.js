@@ -7,6 +7,7 @@ import {useState} from 'react'
 //import Architect from "./pages/Architect";
 
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
+
 const PhotographersAPI = {
   photographers: [
     { number: 1, name: "Антон Мотолько", fileName: "anton_motolko"},
@@ -18,57 +19,56 @@ const PhotographersAPI = {
   phData: [
     {number: 1, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
     events: [
-      "1914 - 1932",
-      "1932 - 1936",
-      "1936 - 1940",
-      "1940 - 1944",
-      "1944 - 1950",
-      "1950 - 1990"],
-    gallery : ["1.png","2.png","3.png"],
-    videoLink: "7CsnFSbpUqE"},
+      {year:"1914 - 1932",description:""},
+      {year:"1932 - 1936",description:""},
+      {year:"1936 - 1940",description:""},
+      {year:"1940 - 1944",description:""},
+      {year:"1944 - 1950",description:""},
+      {year:"1950 - 1990",description:""}],
+    gallery : ["1.png","2.png","3.png"], videoLink: "7CsnFSbpUqE"},
 
     {number: 2, birthYear: "1852",deathYear: "1935",birthDate: "11.12.1852",deathDate: "1935",
     events: [
-      "1852 - 1874",
-      "1874 - 1876",
-      "1876 - 1894",
-      "1894 - 1899",
-      "1899 - 1935",
-      "1935 - 1999",
-      "1999 - 2009"],
-      gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
-    videoLink: "7CsnFSbpUqE"},
+      {year:"1852 - 1874",description:"Представитель польского дворянского рода Тышкевичей герба «Лелива». Сын графа Михала Тышкевича (1824—1854) и Марии Ванды Тышкевич (1833—1860). После преждевременной смерти родителей (оба умерли от туберкулеза), с 8 лет его воспитанием занимался Бенедикт Тышкевич (1801—1866), дед по материнской линии, меценат и коллекционер, владелец Красного Двора, маршал Ковенской губернии."},
+      {year:"1874 - 1876",description:"В первые годы своей жизни спортивные интересы графа Тышкевича выражались в путешествии по Сене на корабле, принадлежащем его деду Бенедикту, а также поездке в США, где в Бостоне он установил контакты с семьей богатых владельцев морских судов Пибоди. Бенедикт Тышкевич в 1874 году в Бостоне женился на американке Кларе Елизавете Банкрофт (1853 — июль 1883), дочери Эдварда Банкрофта (1823—1865) и Клары Елизаветы Пибоди (1826—1882)."},
+      {year:"1876 - 1894",description:"Тышкевич дебютировал в 1876 году на выставке в Филадельфии, где представил репортаж из поездки в Алжир."},
+      {year:"1894 - 1899",description:"В Польше его работы были представлены в 1894 году. Его наследие составляют фотографии из зарубежных поездок, а также произведения, созданные в ателье, в основном портреты."},
+      {year:"1899 - 1935",description:"Его творчество пользовалась международным признанием, в 1899 году он получил золотую медаль на выставке в Берлине."},
+      {year:"1935 - 1999",description:"Последние годы жизни Бенедикт Тышкевич провел на Лазурном берегу Франции, где и умер в 1935 году в возрасте 82 лет."},
+      {year:"1999 - 2009",description:"Уцелевшие фотографии находятся в распоряжении музея Nicéphore Niepce в Шалон-сюр-Соне во Франции и были выставлены в Литве в 1999 году. В 2009 году в Национальном музее истории и культуры в Минске состоялась выставка фотографий Бенедикта Тышкевича."}],
+
+    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"], videoLink: "7CsnFSbpUqE"},
 
     {number: 3, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
     events: [
-      "1914 - 1932",
-      "1932 - 1936",
-      "1936 - 1940",
-      "1940 - 1944",
-      "1944 - 1950",
-      "1950 - 1990"],
+      {year:"1914 - 1932",description:""},
+      {year:"1932 - 1936",description:""},
+      {year:"1936 - 1940",description:""},
+      {year:"1940 - 1944",description:""},
+      {year:"1944 - 1950",description:""},
+      {year:"1950 - 1990",description:""}],
     gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
     videoLink: "7CsnFSbpUqE"},
 
     {number: 4, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
     events: [
-      "1914 - 1932",
-      "1932 - 1936",
-      "1936 - 1940",
-      "1940 - 1944",
-      "1944 - 1950",
-      "1950 - 1990"],
+      {year:"1914 - 1932",description:""},
+      {year:"1932 - 1936",description:""},
+      {year:"1936 - 1940",description:""},
+      {year:"1940 - 1944",description:""},
+      {year:"1944 - 1950",description:""},
+      {year:"1950 - 1990",description:""}],
     gallery : ["1.png","2.png","3.png"],
     videoLink: "7CsnFSbpUqE"},
 
     {number: 5, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
     events: [
-      "1914 - 1932",
-      "1932 - 1936",
-      "1936 - 1940",
-      "1940 - 1944",
-      "1944 - 1950",
-      "1950 - 1990"],
+      {year:"1914 - 1932",description:""},
+      {year:"1932 - 1936",description:""},
+      {year:"1936 - 1940",description:""},
+      {year:"1940 - 1944",description:""},
+      {year:"1944 - 1950",description:""},
+      {year:"1950 - 1990",description:""}],
     gallery : ["1.png","2.png","3.png"],
     videoLink: "7CsnFSbpUqE"},
   ],
@@ -80,6 +80,8 @@ function Card(){
     const id = params.number;
 
     const photographer = PhotographersAPI.photographers.find(p=>p.number == id);
+    const phtData = PhotographersAPI.phData.find(p=>p.number == id);
+
     if(photographer===undefined){
     return <div>Sorry, but the photographer was not found</div>
     }
@@ -87,7 +89,25 @@ function Card(){
     <div>
       <img src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
       <h1>{photographer.name} (#{photographer.number})</h1>
+      <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
+      <Timeline lineColor={'#ddd'}>
+
+      {
+        phtData.events.map(p => (
+          <TimelineItem
+            dateText= {p.year} >
+            <h3>Title, Company</h3>
+            <h4>Subtitle</h4>
+            <p>
+              {p.description}
+            </p>
+          </TimelineItem>
+        ))
+      }
+
+      </Timeline>
       <Link to='/List'>Вернуться к списку</Link>
+
     </div>
 
     );
@@ -152,20 +172,28 @@ const Main = () => (
 )
 
 const Header = () => (
-  <header >
-  <nav>
-    <ul className='Nav'>
-      <li><Link to='/'>Главная страница</Link></li>
-      <li><Link to='/list'>Фотографы</Link></li>
-    </ul>
+  <header className='header'>
+    <nav >
+      <img src={require(`./data/imgs/logo.png`)}></img>
+      <div className='header-links'>
+        <ul>
+          <li><Link to='/' className='Nav-link'>Главная страница</Link></li>
+          <li><Link to='/list' className='Nav-link'>Фотографы</Link></li>
+        </ul>
+      </div>
+      <div className='language'>
+        <h3>EN</h3>
+        <h3>RU</h3>
+      </div>
   </nav>
+  
 </header>
 )
 
 const Footer = () =>(
   <footer>
     <nav>
-      <ul>
+      <ul >
         <li>
            <img src={require(`./data/git_img/vi.png`)} alt=""/>
             <a href="https://github.com/Ejevika10">Виктория Лозюк</a>
