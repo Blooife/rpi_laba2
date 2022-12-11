@@ -7,12 +7,11 @@ import {BrowserRouter, useParams, Route, Routes,Link} from "react-router-dom";
 
 const PhotographersAPI = {
   photographers: [
-    { number: 1, name: "Антон Мотолько"},
-    { number: 2, name: "Бенедикт Генрик Тышкевич"},
-    { number: 3, name: "Лев Дашкевич"},
-    { number: 4, name: "Сергей Колтович"},
-    { number: 5, name: "Ян Булгак"},
-    
+    { number: 1, name: "Антон Мотолько", fileName: "anton_motolko"},
+    { number: 2, name: "Бенедикт Генрик Тышкевич", fileName: "benedikt_genrik_tyshkevich"},
+    { number: 3, name: "Лев Дашкевич", fileName: "lev_dashkevich"},
+    { number: 4, name: "Сергей Колтович", fileName: "sergei_koltovich"},
+    { number: 5, name: "Ян Булгак", fileName: "yan_bulgak"}
   ],
   all: function() { return this.photographers},
 }
