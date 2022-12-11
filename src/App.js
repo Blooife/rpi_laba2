@@ -1,4 +1,4 @@
-//import './App.css';
+import './App.css';
 //import Home from "./pages/Home";
 import {BrowserRouter, useParams, Route, Routes,Link} from "react-router-dom";
 //import NavigationBar from "./components/Navigation/NavigationBar";
