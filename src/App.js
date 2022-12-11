@@ -17,15 +17,15 @@ const PhotographersAPI = {
     { number: 5, name: "Ян Булгак", fileName: "yan_bulgak"}
   ],
   phData: [
-    {number: 1, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
+    {number: 1, birthYear: "1988",deathYear: "",birthDate: "04.06.1988",deathDate: "",
     events: [
-      {year:"1914 - 1932",description:""},
-      {year:"1932 - 1936",description:""},
-      {year:"1936 - 1940",description:""},
-      {year:"1940 - 1944",description:""},
-      {year:"1944 - 1950",description:""},
-      {year:"1950 - 1990",description:""}],
-    gallery : ["1.png","2.png","3.png"], videoLink: "7CsnFSbpUqE"},
+      {year:"1988 - 2011",description:"Закончил в 2004 году гимназию №29 г.Минска. Учился в Белорусской академии связи, после в Институте предпринимательской деятельности. Работал фотографом. Сотрудничал с интернет-порталом TUT.BY"},
+      {year:"2011 - 2015",description:"В июле 2011 года был задержан во время молчаливой акции протеста в Минске."},
+      {year:"2015 - 2018",description:"В 2015 году получил премию «Чемпионы гражданского подполья' в номинации «Журналист года»."},
+      {year:"2018 - 2020",description:"Вместе с основателем магазина национальных товаров «Symbal.by» Павлом Белоусом и блоггером Эдуардом Пальчисом организовал праздничный концерт к столетию провозглашения БНР. Для проведения концерта организаторы собрали более 36 тысяч рублей на платформе «talaka.org»."},
+      {year:"2020 - 2021",description:"Переехал в Польшу. Создал &quot; телеграмм-канал «МотолькоПомоги», который находится на 11 месте по числу подписчиков среди всех белорусских каналов. Канал создавался для освещения бытовых проблем в городах Беларуси, политических событий."},
+      {year:"2021 - 2022",description:"Телеграмм-канал Антона Матолько был признан экстремистским по решению суда от 23 марта 2021 года. За создание такого формирования и членства в нем предусмотрена криминальная ответственность."}],
+    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"], videoLink: "7CsnFSbpUqE"},
 
     {number: 2, birthYear: "1852",deathYear: "1935",birthDate: "11.12.1852",deathDate: "1935",
     events: [
@@ -50,7 +50,7 @@ const PhotographersAPI = {
     gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
     videoLink: "7CsnFSbpUqE"},
 
-    {number: 4, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
+{number: 4, birthYear: "1914",deathYear: "1990",birthDate: "13.01.1914",deathDate: "23.01.1990",
     events: [
       {year:"1914 - 1932",description:""},
       {year:"1932 - 1936",description:""},
@@ -120,6 +120,7 @@ function List() {
   })
   console.log('Hi');
   return(
+    
   <div>
     <form className="formSearch">
       <input
