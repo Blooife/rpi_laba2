@@ -1,12 +1,12 @@
 import './App.css';
 //import Home from "./pages/Home";
 import {BrowserRouter, useParams, Route, Routes,Link} from "react-router-dom";
+import {useState} from 'react'
 //import NavigationBar from "./components/Navigation/NavigationBar";
 //import Architects from "./pages/Architects";
 //import Architect from "./pages/Architect";
 
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
-//<Timeline/>
 const PhotographersAPI = {
   photographers: [
     { number: 1, name: "Антон Мотолько", fileName: "anton_motolko"},
@@ -88,16 +88,30 @@ function Card(){
       <img src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
       <h1>{photographer.name} (#{photographer.number})</h1>
       <Link to='/List'>Вернуться к списку</Link>
-      <Timeline/>
     </div>
 
     );
 }
-const List = () => (
+
+function List() {
+  const[value, setValue] = useState("");
+  const filteredPhotogr = PhotographersAPI.photographers.filter(photographer=>{
+    return photographer.name.toLowerCase().includes(value.toLowerCase());
+  })
+  console.log('Hi');
+  return(
   <div>
+    <form className="formSearch">
+      <input
+      type="text"
+      placeholder='Search for photographer'
+      onChange={(event)=> setValue(event.target.value)}
+      >
+      </input>
+    </form>
     <ul>
       {
-        PhotographersAPI.all().map(p => (
+          filteredPhotogr.map(p=>(
           <li key={p.number}>
             <Link to={`/list/${p.number}`}>{p.name}</Link>
           </li>
@@ -105,7 +119,8 @@ const List = () => (
       }
     </ul>
   </div>
-)
+  )
+}
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
