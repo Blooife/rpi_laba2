@@ -96,8 +96,6 @@ function Card(){
         phtData.events.map(p => (
           <TimelineItem
             dateText= {p.year} >
-            <h3>Title, Company</h3>
-            <h4>Subtitle</h4>
             <p>
               {p.description}
             </p>
