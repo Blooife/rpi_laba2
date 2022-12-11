@@ -16,7 +16,6 @@ const PhotographersAPI = {
   all: function() { return this.photographers},
 }
 
-
 function Card(){
     const params = useParams();
     const id = params.number;
@@ -27,6 +26,7 @@ function Card(){
     }
     return (
     <div>
+      <img src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
       <h1>{photographer.name} (#{photographer.number})</h1>
       <Link to='/List'>Вернуться к списку</Link>
     </div>
@@ -60,6 +60,7 @@ function Home(){
     
     <div>
       <h1>{photographer.name} (#{photographer.number})</h1>
+      <img src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
     </div>
   </div>
   );
