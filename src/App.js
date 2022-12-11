@@ -5,6 +5,130 @@ import {BrowserRouter, useParams, Route, Routes,Link} from "react-router-dom";
 //import Architects from "./pages/Architects";
 //import Architect from "./pages/Architect";
 
+import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
+
+<Timeline lineColor={'#ddd'}>
+  <TimelineItem
+    key="001"
+    dateText="11/2010 – Present"
+    style={{ color: '#e86971' }}
+  >
+    <h3>Title, Company</h3>
+    <h4>Subtitle</h4>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+  </TimelineItem>
+  <TimelineItem
+    key="002"
+    dateText="04/2009 – 11/2010"
+    dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
+    bodyContainerStyle={{
+      background: '#ddd',
+      padding: '20px',
+      borderRadius: '8px',
+      boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+    }}
+  >
+    <h3 style={{ color: '#61b8ff' }}>Title, Company</h3>
+    <h4 style={{ color: '#61b8ff' }}>Subtitle</h4>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+  </TimelineItem>
+  <TimelineItem
+    key="003"
+    dateComponent={(
+      <div
+        style={{
+          display: 'block',
+          float: 'left',
+          padding: '10px',
+          background: 'rgb(150, 150, 150)',
+          color: '#fff',
+        }}
+      >
+        11/2008 – 04/2009
+      </div>
+    )}
+  >
+    <h3>Title, Company</h3>
+    <h4>Subtitle</h4>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+  </TimelineItem>
+  <TimelineItem
+    key="004"
+    dateText="08/2008 – 11/2008"
+    dateInnerStyle={{ background: '#76bb7f' }}
+  >
+    <h3>Title, Company</h3>
+    <h4>Subtitle</h4>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+    <p>
+      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+      est.
+    </p>
+  </TimelineItem>
+</Timeline>
+
 const PhotographersAPI = {
   photographers: [
     { number: 1, name: "Антон Мотолько", fileName: "anton_motolko"},
@@ -29,7 +153,9 @@ function Card(){
       <img src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
       <h1>{photographer.name} (#{photographer.number})</h1>
       <Link to='/List'>Вернуться к списку</Link>
+      <Timeline/>
     </div>
+    
     );
 }
 
@@ -93,14 +219,17 @@ const Footer = () =>(
     <nav>
       <ul>
         <li>
-            <a href="https://github.com/Ejevika10">Виктоория Лозюк</a>
+           <img src={require(`./data/git_img/vi.png`)} alt=""/>
+            <a href="https://github.com/Ejevika10">Виктория Лозюк</a>
             <h6>Ejevika10</h6>
-        </li>
+        </li>        
         <li>
+            <img src={require(`./data/git_img/ksu.png`)} alt=""/>
             <a href="https://github.com/KseniaHlebanova">Ксения Хлебанова</a>
             <h6>KseniaHlebanova</h6>
         </li>
         <li>
+            <img src={require(`./data/git_img/alex.png`)} alt=""/>
             <a href='https://github.com/Blooife'>Саша Милковская</a>
             <h6>Blooife</h6>
         </li>
