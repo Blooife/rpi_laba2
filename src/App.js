@@ -88,6 +88,27 @@ const Header = () => (
 </header>
 )
 
+const Footer = () =>(
+  <footer>
+    <nav>
+      <ul>
+        <li>
+            <a href="https://github.com/Ejevika10">Виктоория Лозюк</a>
+            <h6>Ejevika10</h6>
+        </li>
+        <li>
+            <a href="https://github.com/KseniaHlebanova">Ксения Хлебанова</a>
+            <h6>KseniaHlebanova</h6>
+        </li>
+        <li>
+            <a href='https://github.com/Blooife'>Саша Милковская</a>
+            <h6>Blooife</h6>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+)
+
 function App() {
   return (
       <>
@@ -95,6 +116,7 @@ function App() {
           <div>
           <Header />
           <Main />
+          <Footer />
           </div>
         </BrowserRouter>
       </>
