@@ -71,8 +71,7 @@ const Main = () => (
     <Routes>
             <Route path="/list" element={<List />} />
             <Route path="/list/:number" element={<Card />} />
-            <Route path="*" element={<Home />}>
-            </Route>
+            <Route path="*" element={<Home />}/>
     </Routes>
   </main>
 )
