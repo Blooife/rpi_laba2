@@ -80,6 +80,8 @@ function Card(){
     const id = params.number;
 
     const photographer = PhotographersAPI.photographers.find(p=>p.number == id);
+    const phtData = PhotographersAPI.phData.find(p=>p.number == id);
+
     if(photographer===undefined){
     return <div>Sorry, but the photographer was not found</div>
     }
@@ -87,49 +89,24 @@ function Card(){
     <div>
       <img src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
       <h1>{photographer.name} (#{photographer.number})</h1>
-      <Link to='/List'>Вернуться к списку</Link>
+      
       <Timeline lineColor={'#ddd'}>
 
-  <TimelineItem
-    key="001"
-    dateText="11/2010 – Present"  >
-    <h3>Title, Company</h3>
-    <h4>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-  <TimelineItem
-    key="002"
-    dateText="04/2009 – 11/2010">
-    <h3 >Title, Company</h3>
-    <h4 >Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-  <TimelineItem
-    key="003"
-    dateText="08/2008 – 11/2008">
-    <h3>Title, Company</h3>
-    <h4>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-</Timeline>
+      {
+        phtData.events.map(p => (
+          <TimelineItem
+            dateText= {p} >
+            <h3>Title, Company</h3>
+            <h4>Subtitle</h4>
+            <p>
+              DDDDDDD
+            </p>
+          </TimelineItem>
+        ))
+      }
+
+      </Timeline>
+      <Link to='/List'>Вернуться к списку</Link>
 
     </div>
 
