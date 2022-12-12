@@ -9,8 +9,8 @@ function Card(){
     const params = useParams();
     const id = params.number;
 
-    const photographer = PhotographersAPI.photographers.find(p=>p.number === id);
-    const phtData = PhotographersAPI.phData.find(p=>p.number === id);
+    const photographer = PhotographersAPI.photographers.find(p=>p.number == id);
+    const phtData = PhotographersAPI.phData.find(p=>p.number == id);
 
     if(photographer===undefined){
     return <div>Sorry, but the photographer was not found</div>
