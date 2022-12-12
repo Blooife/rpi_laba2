@@ -7,6 +7,7 @@ import {useState} from 'react'
 //import Architect from "./pages/Architect";
 
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
+import Carousel from 'react-bootstrap/Carousel';
 
 const PhotographersAPI = {
   photographers: [
@@ -25,7 +26,8 @@ const PhotographersAPI = {
       {year:"2018 - 2020",description:"Вместе с основателем магазина национальных товаров «Symbal.by» Павлом Белоусом и блоггером Эдуардом Пальчисом организовал праздничный концерт к столетию провозглашения БНР. Для проведения концерта организаторы собрали более 36 тысяч рублей на платформе «talaka.org»."},
       {year:"2020 - 2021",description:"Переехал в Польшу. Создал &quot; телеграмм-канал «МотолькоПомоги», который находится на 11 месте по числу подписчиков среди всех белорусских каналов. Канал создавался для освещения бытовых проблем в городах Беларуси, политических событий."},
       {year:"2021 - 2022",description:"Телеграмм-канал Антона Матолько был признан экстремистским по решению суда от 23 марта 2021 года. За создание такого формирования и членства в нем предусмотрена криминальная ответственность."}],
-    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"], videoLink: "7CsnFSbpUqE"},
+    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"], 
+    videoLink: "7CsnFSbpUqE"},
 
     {number: 2, birthYear: "1852",deathYear: "1935",birthDate: "11.12.1852",deathDate: "1935",
     events: [
@@ -36,8 +38,8 @@ const PhotographersAPI = {
       {year:"1899 - 1935",description:"Его творчество пользовалась международным признанием, в 1899 году он получил золотую медаль на выставке в Берлине."},
       {year:"1935 - 1999",description:"Последние годы жизни Бенедикт Тышкевич провел на Лазурном берегу Франции, где и умер в 1935 году в возрасте 82 лет."},
       {year:"1999 - 2009",description:"Уцелевшие фотографии находятся в распоряжении музея Nicéphore Niepce в Шалон-сюр-Соне во Франции и были выставлены в Литве в 1999 году. В 2009 году в Национальном музее истории и культуры в Минске состоялась выставка фотографий Бенедикта Тышкевича."}],
-
-    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"], videoLink: "7CsnFSbpUqE"},
+    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"], 
+    videoLink: "7CsnFSbpUqE"},
 
     {number: 3, birthYear: "1882",deathYear: "1957",birthDate: "12.02.1882",deathDate: "04.12.1957",
     events: [
@@ -69,7 +71,7 @@ const PhotographersAPI = {
       {year:"1912 - 1919",description:"По заказу магистрата в 1912—1915 годах фотографировал памятники архитектуры города. С 1919 года преподавал художественную фотографию на отделении изящных искусств Университета Стефана Батория; доцент (1939). В 1919 году стал одним из основателей и председателем Виленского фотоклуба. Руководил им до начала Второй мировой войны."},
       {year:"1935 - 1939",description:"Был одним из редакторов журналов „Przegląd Fotograficzny“, „Fotograf Polski“. В 1935 году издал книгу про свое путешествие из Вильно на озеро Нарочь с 38 фотоснимками. Написал ряд книг по технике и искусству фотографии, воспоминания о Фердинанде Рущице (1939), а также стихотворения и новеллы."},
       {year:"1945 - 1950",description:"В 1945 году переехал в Варшаву. Выполнил около тысячи фотографий разрушенной и восстанавливавшейся Варшавы, около 2 тысяч фотографий западных земель, присоединённых к Польше. В 1947 году стал учредителем Союза фотохудожников Польши и руководил им до своей смерти."}],
-    gallery : ["1.png","2.png","3.png"],
+    gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
     videoLink: "7CsnFSbpUqE"},
   ],
   all: function() { return this.photographers},
@@ -90,8 +92,8 @@ function Card(){
       <img src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
       <h1>{photographer.name} (#{photographer.number})</h1>
       <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
+      
       <Timeline lineColor={'#ddd'}>
-
       {
         phtData.events.map(p => (
           <TimelineItem
@@ -102,8 +104,27 @@ function Card(){
           </TimelineItem>
         ))
       }
-
       </Timeline>
+
+      <Carousel>
+      {
+        phtData.gallery.map(p => (
+          <Carousel.Item>
+            <img
+              /*className="d-block w-100"*/
+              src={require(`./data/${photographer.fileName}/${p}`)}
+              alt="Image One"
+            />
+            <Carousel.Caption>
+              <h3>Label for first slide</h3>
+              <p>Sample Text for Image One</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))
+        
+      }    
+      </Carousel>
+
       <Link to='/List'>Вернуться к списку</Link>
 
     </div>
