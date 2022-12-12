@@ -1,4 +1,4 @@
-import Header from './Header';
+import NavigaitonBar from './NavigationBar';
 import Main from "./Main";
 import Footer from './Footer';
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Header />
+        <NavigaitonBar />
         <Main />
         <Footer />
       </div>
