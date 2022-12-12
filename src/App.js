@@ -1,7 +1,12 @@
-import './App.css';
+//import './App.css';
 //import Home from "./pages/Home";
-import {BrowserRouter, useParams, Route, Routes,Link} from "react-router-dom";
+import {BrowserRouter, useParams, Route, Routes,Link, Outlet} from "react-router-dom";
 import {useState} from 'react'
+////////////for header
+import {Container, Nav, Navbar} from "react-bootstrap"
+import {useTranslation} from "react-i18next";
+import './i18n.js';
+//////////////////
 //import NavigationBar from "./components/Navigation/NavigationBar";
 //import Architects from "./pages/Architects";
 //import Architect from "./pages/Architect";
@@ -115,7 +120,6 @@ function List() {
   const filteredPhotogr = PhotographersAPI.photographers.filter(photographer=>{
     return photographer.name.toLowerCase().includes(value.toLowerCase());
   })
-  console.log('Hi');
   return(
     
   <div>
@@ -169,7 +173,7 @@ const Main = () => (
   </main>
 )
 
-const Header = () => (
+/*const Header = () => (
   <header className='header'>
     <nav >
       <img src={require(`./data/imgs/logo.png`)}></img>
@@ -186,7 +190,40 @@ const Header = () => (
   </nav>
   
 </header>
-)
+)*/
+
+function NavigaitonBar() {
+  const {t,i18n } = useTranslation();
+  return(
+    <>
+    <Navbar as="header" expand="lg" className="nav">
+      <Container>
+      <img src={require(`./data/imgs/logo.png`)}></img>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <Navbar.Collapse>
+        <Nav >          
+          <div className='header-links'>
+            <ul>
+              <li><Link to='/' className='Nav-link'>{t('home_page')}</Link></li>
+              <li><Link to='/list' className='Nav-link'>{t("list_of_ph")}</Link></li>
+            </ul>
+          </div>
+        </Nav>
+          <div className="nav-languages">
+            <Nav.Link className="lang" onClick={() => i18n.changeLanguage('ru')}>
+                 <span>{t("russian_lang")}</span>
+            </Nav.Link>
+            <Nav.Link className="lang" onClick={() => i18n.changeLanguage('en')}>                                
+             <span>{t("english_lang")}</span>
+             </Nav.Link>
+            </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    <Outlet />
+    </>
+);
+}
 
 const Footer = () =>(
   <footer>
@@ -217,7 +254,7 @@ function App() {
       <>
         <BrowserRouter>
           <div>
-          <Header />
+          <NavigaitonBar/>
           <Main />
           <Footer />
           </div>
