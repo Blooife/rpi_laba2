@@ -26,6 +26,7 @@ function Card(){
       <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
       <>
       {/*<Timeline lineColor={'#ddd'}>
+      {/*<Timeline lineColor={'#ddd'}>
       {
         phtData.events.map(p => (
           <TimelineItem
@@ -34,8 +35,8 @@ function Card(){
               {p.description}
             </p>
             
-            /*</TimelineItem>
-  ))
+          </TimelineItem>
+        ))
       }
     </Timeline>*/}
       </>
