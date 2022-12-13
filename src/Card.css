@@ -1,6 +1,73 @@
 .carouselImg{
-    text-align: center
+    text-align: center;
 }
-.CardInfo{
-    background-image: "./data/imgs/bg.jpg";
+.cardInfo{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./data/imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    height: 600px;
+    display:flex;
+    color: #262626;
+}
+.cardImg{
+    margin:auto ;
+    margin-top: 75px;
+}
+.cardText{
+    width: 1000px;
+    text-align: justify;
+}
+.cardText>h1{
+    text-align:left;
+    font-weight: bold;
+    color: #46acff;
+    font-size: 5em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.cardText>h2{
+    text-align:left;
+    font-weight: bold;
+    color: #262626;
+    font-size: 2.7em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cardText>p{
+    width: 550px;
+    background-image: "src\data\imgs\new-logo.png";
+    text-align:left;
+    font-weight: normal;
+    color: #262626;
+    font-size: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: '#ddd';
+        
+}
+.title2{
+    text-align:left;
+    font-weight: bold;
+    color: #46acff;
+    font-size: 4em;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.dopInfo{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./data/imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display:flex;
+    flex-direction: row;
+}
+.dopInfo>div,iframe{
+    margin:auto ;
 }
