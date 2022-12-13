@@ -1,3 +1,4 @@
+import "./Card.css"
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -20,7 +21,7 @@ function Card(){
       <img alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
       <h1>{photographer.name} (#{photographer.number})</h1>
       <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
-      
+      <>
       <Timeline lineColor={'#ddd'}>
       {
         phtData.events.map(p => (
@@ -33,25 +34,23 @@ function Card(){
         ))
       }
       </Timeline>
+      </>
 
-      <Carousel>
+      <>
+      <Carousel variant="dark">
       {
         phtData.gallery.map(p => (
-          <Carousel.Item>
+          <Carousel.Item className="carouselImg">
             <img
-              /*className="d-block w-100"*/
               src={require(`./data/${photographer.fileName}/${p}`)}
               alt=""
             />
-            <Carousel.Caption>
-              <h3>Label for first slide</h3>
-              <p>Sample Text for Image One</p>
-            </Carousel.Caption>
           </Carousel.Item>
         ))
         
       }    
       </Carousel>
+      </>
 
       <Link to='/List'>Вернуться к списку</Link>
 
