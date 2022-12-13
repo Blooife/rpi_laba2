@@ -1,4 +1,4 @@
-const PhotographersAPI = {
+  const PhotographersAPI = {
     photographers: [
       { number: 1, name: "Антон Мотолько", fileName: "anton_motolko"},
       { number: 2, name: "Бенедикт Генрик Тышкевич", fileName: "benedikt_genrik_tyshkevich"},
@@ -16,7 +16,7 @@ const PhotographersAPI = {
         {year:"2020 - 2021",description:"Переехал в Польшу. Создал &quot; телеграмм-канал «МотолькоПомоги», который находится на 11 месте по числу подписчиков среди всех белорусских каналов. Канал создавался для освещения бытовых проблем в городах Беларуси, политических событий."},
         {year:"2021 - 2022",description:"Телеграмм-канал Антона Матолько был признан экстремистским по решению суда от 23 марта 2021 года. За создание такого формирования и членства в нем предусмотрена криминальная ответственность."}],
       gallery : ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"], 
-      videoLink: "https://www.youtube.com/embed/hYdy3ezxHFQ",
+      videoLink: "https://www.youtube.com/embed/24_GpY-i3e0",
       maplink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.3547066125216!2d27.585017215312696!3d53.88989914155932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbce32de4c5f65%3A0x309ef005129bb909!2z0JjQvdGB0YLQuNGC0YPRgiDQv9GA0LXQtNC_0YDQuNC90LjQvNCw0YLQtdC70YzRgdC60L7QuSDQtNC10Y_RgtC10LvRjNC90L7RgdGC0Lg!5e0!3m2!1sru!2sby!4v1670947041150!5m2!1sru!2sby",
     },
   
@@ -43,7 +43,7 @@ const PhotographersAPI = {
         {year:"1941 - 1957",description:"В 1941-1944 жил в эвакуации в г. Фрунзе (ныне Бишкек, Кыргызстан), работал в медицинских учреждениях. В сентябре 1944 г. вернулся в Минск.  Работал в Институте теоретической медицины и Институте физиологии."},
         {year:"1957 - 2002",description:"Похоронен на Кальварийском кладбище в Минске. В сентябре-декабре 2002 г. в Национальном музее истории и культуры Беларуси состоялась выставка произведений Дашкевича «Очарованный Беларусью»."}],
       gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
-      videoLink: "https://www.youtube.com/embed/hYdy3ezxHFQ",
+      videoLink: "https://www.youtube.com/embed/4scZxuGta9A",
       maplink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.0852642862287!2d27.542341015312857!3d53.89468844119806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfe7aa6bb8c7%3A0xaeab8e23574f2c86!2z0JHQtdC70L7RgNGD0YHRgdC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0L_QtdC00LDQs9C-0LPQuNGH0LXRgdC60LjQuSDRg9C90LjQstC10YDRgdC40YLQtdGCINC40LzQtdC90Lgg0JzQsNC60YHQuNC80LAg0KLQsNC90LrQsA!5e0!3m2!1sru!2sby!4v1670946920657!5m2!1sru!2sby",
     },
   
@@ -56,7 +56,7 @@ const PhotographersAPI = {
         {year:"1990 - 1993",description:"Работал фотографом в музее П. Бровки"},
         {year:"1997 - 2022",description:"Работал фотографом на Минском художественном комбинате"}],
       gallery : ["1.jpg","2.jpg","3.jpg","4.jpg"],
-      videoLink: "https://www.youtube.com/embed/hYdy3ezxHFQ",
+      videoLink: "https://www.youtube.com/embed/oqNZyOm41aw" ,
       maplink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2353.565500953217!2d27.536590415310894!3d53.85059154452295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd0549f088add%3A0x214f59e6c4286a77!2z0JrQvtC70LvQtdC00LYg0LjRgdC60YPRgdGB0YLQsg!5e0!3m2!1sru!2sby!4v1670946707073!5m2!1sru!2sby",
     },
   
@@ -68,7 +68,7 @@ const PhotographersAPI = {
         {year:"1935 - 1939",description:"Был одним из редакторов журналов „Przegląd Fotograficzny“, „Fotograf Polski“. В 1935 году издал книгу про свое путешествие из Вильно на озеро Нарочь с 38 фотоснимками. Написал ряд книг по технике и искусству фотографии, воспоминания о Фердинанде Рущице (1939), а также стихотворения и новеллы."},
         {year:"1945 - 1950",description:"В 1945 году переехал в Варшаву. Выполнил около тысячи фотографий разрушенной и восстанавливавшейся Варшавы, около 2 тысяч фотографий западных земель, присоединённых к Польше. В 1947 году стал учредителем Союза фотохудожников Польши и руководил им до своей смерти."}],
       gallery : ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"],
-      videoLink: "https://www.youtube.com/embed/hYdy3ezxHFQ",
+      videoLink: "https://www.youtube.com/embed/p-uBOWj33tc" ,
       maplink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.5369175927576!2d25.28341972437834!3d54.682578727654196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94169bb74c61%3A0xc8707fedecb7d00b!2z0JLQuNC70YzQvdGO0YHRgdC60LjQuSDRg9C90LjQstC10YDRgdC40YLQtdGC!5e0!3m2!1sru!2sby!4v1670946552360!5m2!1sru!2sby",
     },
     ],

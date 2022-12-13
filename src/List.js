@@ -12,7 +12,6 @@ function List() {
         return photographer.name;
       }      
     })
-
     return(
       
     <div>
