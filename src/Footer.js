@@ -10,19 +10,19 @@ function Footer(){
         <h2>{t("devs")}</h2>
         <ul >
           <li>
-             <img src={require(`./data/git_img/vi.png`)} alt=""/>
-              <a href="https://github.com/Ejevika10">{t("vika")}</a>
-              <h6>Ejevika10</h6>
+            <h6>{t("vika")}</h6>
+            <img src={require(`./data/git_img/vi.png`)} alt=""/>
+            <a href="https://github.com/Ejevika10">Ejevika10</a>
           </li>        
           <li>
-              <img src={require(`./data/git_img/ksu.png`)} alt=""/>
-              <a href="https://github.com/KseniaHlebanova">{t("ksu")}</a>
-              <h6>KseniaHlebanova</h6>
+            <h6>{t("ksu")}</h6>
+            <img src={require(`./data/git_img/ksu.png`)} alt=""/>
+            <a href="https://github.com/KseniaHlebanova">KseniaHlebanova</a>
           </li>
           <li>
-              <img src={require(`./data/git_img/alex.png`)} alt=""/>
-              <a href='https://github.com/Blooife'>{t("sasha")}</a>
-              <h6>Blooife</h6>
+            <h6>{t("sasha")}</h6>
+            <img src={require(`./data/git_img/alex.png`)} alt=""/>
+            <a href='https://github.com/Blooife'>Blooife</a>
           </li>
         </ul>
       </nav>
