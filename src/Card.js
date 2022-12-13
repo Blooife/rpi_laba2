@@ -64,6 +64,20 @@ function Card(){
       </Carousel>
       </>
 
+      <div className="video-wrapper">
+                <iframe className="person-video" src={phtData.videoLink} frameborder="0"
+                width="700" height="450"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen>
+                </iframe>
+      </div>
+      <div>
+      <iframe src={phtData.maplink}
+      width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+       ></iframe>
+       </div>
+
+
       <Link to='/List'>{t("back_to_list")}</Link>
 
     </div>
