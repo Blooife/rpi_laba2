@@ -10,10 +10,9 @@ function NavigaitonBar() {
   return(
     <>
    
-    <Navbar  as="header" expand="md" className="nav">
-      <Container className='nav-into'>
-      
-      <img src={require(`./data/imgs/new-logo.png`)}></img>
+    <Navbar  as="header" expand="md" className="nav" >
+      <Container className='nav-into'>      
+        <img src={require(`./data/imgs/new-logo.png`)}></img>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse className='collapse'>
         <Nav >          

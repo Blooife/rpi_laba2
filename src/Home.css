@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("./fonts/lato-regular.ttf") format("TrueType");
+    font-style: normal;
+    font-weight: normal; }
+
+.home{
+    background-image: url("./data/imgs/home_bg1.png");
+    height: 500px;
+    width: 100%;
+    opacity: .9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+
+}
+
+.home h1{
+    padding-top: 40px;
+    font-family: "LatoRegular";
+    color:black;
+    font-weight: bold;
+}
+
+.home p{
+    padding-left: 70%;
+    font-family: "LatoRegular";
+    color:black;
+    font-size: 25px; 
+     
+    width: 98%;
+}
