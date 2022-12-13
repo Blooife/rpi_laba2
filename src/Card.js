@@ -31,9 +31,17 @@ function Card(){
         phtData.events.map(p => (
           <TimelineItem
             dateText= {p.year} >
+            dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
+    bodyContainerStyle={{
+      background: '#ddd',
+      padding: '20px',
+      borderRadius: '8px',
+      boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+    }}
             <p>
               {p.description}
             </p>
+            
           </TimelineItem>
         ))
       }
