@@ -7,16 +7,20 @@ function List() {
     const {t,i18n } = useTranslation();
     const[value, setValue] = useState("");
     const filteredPhotogr = PhotographersAPI.photographers.filter(photographer=>{
-      return photographer.name.toLowerCase().includes(value.toLowerCase());
+      let f = t('name'+photographer.number)
+      if(f.toLowerCase().includes(value.toLowerCase())){
+        return photographer.name;
+      }      
     })
-    console.log('Hi');
+
     return(
       
     <div>
       <form className="formSearch">
-        <h3>{t("searchCaption")}</h3>
+        <h3>{t("list_ph")}</h3>
         <input
         type="text"
+        placeholder={t('searchCaption')}
         onChange={(event)=> setValue(event.target.value)}
         >
         </input>
@@ -25,7 +29,7 @@ function List() {
         {
             filteredPhotogr.map(p=>(
             <li key={p.number}>
-              <Link to={`/list/${p.number}`}>{p.name}</Link>
+              <Link to={`/list/${p.number}`}>{t("name"+ p.number)}</Link>
             </li>
           ))
         }

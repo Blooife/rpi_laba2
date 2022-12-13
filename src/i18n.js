@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import Backend from 'i18next-http-backend';
+import PhotographersAPI from './PhotographersAPI';
 import LanguageDetector from 'i18next-browser-languagedetector';
 //import EnLang from './locales/en/translation.json'
 //import RuLang from './locales/ru/translation.json'
@@ -37,9 +38,16 @@ i18n
                   vika: "Viktoryia Loziuk",
                   ksu: "Ksenia Hlebanova",
                   sasha:"Sasha Milkovskaya",
-                  searchCaption: "Search for pgotographer", 
-                }
+                  searchCaption: "Search for a photographer", 
+                  list_ph: "List of photographers",
+
+                  name1: "Anton Motolko",
+                  name2: "Benedikt Henrik Tyshkevich",
+                  name3: "Lev Dashkevich",
+                  name4: "Sergey Koltovich",
+                  name5: "Yan Bulgak",
               },
+            },
               
             
             ru: {
@@ -57,16 +65,18 @@ i18n
                     vika: "Виктория Лозюк",
                     ksu: "Ксения Хлебанова",
                     sasha: "Саша Милковская", 
-                    searchCaption: "Поиск фотографа",           
+                    searchCaption: "Поиск фотографа",  
+                    list_ph: "Список фотографов",
+
+                    name1: "Антон Мотолько",
+                    name2: "Бенедикт Генрик Тышкевич",
+                    name3: "Лев Дашкевич",
+                    name4: "Сергей Колтович",
+                    name5: "Ян Булгак",
+                   
               }
             }
         },
-
-        /* backend: {
-            //loadPath: '/locales/${lng}/translation.json'
-            loadPath: 'public/locales/en/translation.json'
-           // loadPath: require(./locales/${lng}/translation.json)
-        }*/
     });
 
 export default i18n;
