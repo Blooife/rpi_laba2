@@ -6,7 +6,6 @@ import {useTranslation} from "react-i18next";
 import PhotographersAPI from './PhotographersAPI';
 
 import {useParams, Link} from "react-router-dom";
-import { t } from 'i18next';
 
 function Card(){
     const params = useParams();
@@ -26,7 +25,7 @@ function Card(){
       <h1>{photographer.name} (#{photographer.number})</h1>
       <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
       <>
-      <Timeline lineColor={'#ddd'}>
+      {/*<Timeline lineColor={'#ddd'}>
       {
         phtData.events.map(p => (
           <TimelineItem
@@ -42,10 +41,10 @@ function Card(){
               {p.description}
             </p>
             
-          </TimelineItem>
-        ))
+  </TimelineItem>
+  ))
       }
-      </Timeline>
+    </Timeline>*/}
       </>
 
       <>
@@ -61,7 +60,7 @@ function Card(){
         ))
         
       }    
-      </Carousel>
+    </Carousel>
       </>
 
       <div className="video-wrapper">
@@ -73,9 +72,9 @@ function Card(){
       </div>
       <div>
       <iframe src={phtData.maplink}
-      width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+         width="600" height="450"  allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"
        ></iframe>
-       </div>
+  </div>
 
 
       <Link to='/List'>{t("back_to_list")}</Link>
