@@ -7,7 +7,7 @@ function Footer(){
   return(
     <footer>
       <nav>
-        <h2>{t("devs")}</h2>
+      <h2>{t("devs")}</h2>
         <ul >
           <li>
             <h6>{t("vika")}</h6>
