@@ -1,21 +1,22 @@
+import "./Footer.css"
 const Footer = () =>(
     <footer>
-      <nav>
+      <nav >
         <ul >
-          <li>
-             <img src={require(`./data/git_img/vi.png`)} alt=""/>
-              <a href="https://github.com/Ejevika10">Виктория Лозюк</a>
-              <h6>Ejevika10</h6>
+          <li >
+            <h6>Виктория Лозюк</h6>
+            <img src={require(`./data/git_img/vi.png`)} width="120" height="120" alt=""/>
+            <a href="https://github.com/Ejevika10">Ejevika10</a>
           </li>        
-          <li>
-              <img src={require(`./data/git_img/ksu.png`)} alt=""/>
-              <a href="https://github.com/KseniaHlebanova">Ксения Хлебанова</a>
-              <h6>KseniaHlebanova</h6>
+          <li >
+            <h6>Ксения Хлебанова</h6>
+            <img src={require(`./data/git_img/ksu.png`)} width="120" height="120" alt=""/>
+            <a href="https://github.com/KseniaHlebanova">KseniaHlebanova</a>
           </li>
-          <li>
-              <img src={require(`./data/git_img/alex.png`)} alt=""/>
-              <a href='https://github.com/Blooife'>Саша Милковская</a>
-              <h6>Blooife</h6>
+          <li >
+            <h6>Саша Милковская</h6>
+            <img src={require(`./data/git_img/alex.png`)} width="120" height="120" alt=""/>
+            <a href='https://github.com/Blooife'>Blooife</a>
           </li>
         </ul>
       </nav>

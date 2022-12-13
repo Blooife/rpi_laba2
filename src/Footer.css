@@ -1,0 +1,30 @@
+footer{
+    height: 300px;
+    background-color:rgb(143, 220, 248);
+    display: flex;
+}
+nav{
+    width: 67%;
+    height: 150px;
+    margin:auto;
+    display: block;
+    text-align-last: justify;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    list-style: none;
+  }
+li{
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+}
+li>h6,a,img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
