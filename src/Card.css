@@ -1,3 +1,6 @@
 .carouselImg{
     text-align: center
 }
+.CardInfo{
+    background-image: "./data/imgs/bg.jpg";
+}
