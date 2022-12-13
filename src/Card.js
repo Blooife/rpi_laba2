@@ -21,9 +21,12 @@ function Card(){
     }
     return (
     <div>
-      <img alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
-      <h1>{photographer.name} (#{photographer.number})</h1>
-      <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
+      <div className="CardInfo">
+        <img alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
+        <h1>{photographer.name} (#{photographer.number})</h1>
+        <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
+        <p>{phtData.shortInfo}</p>
+      </div>
       <>
       <Timeline lineColor={'#ddd'}>
       {
