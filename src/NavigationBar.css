@@ -3,10 +3,57 @@
     src: url("./fonts/lato-regular.ttf") format("TrueType");
     font-style: normal;
     font-weight: normal; }
-.header{
+
+.nav{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.nav-into{
+    width: 1600px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+}
+.basic-navbar-nav{
+    max-height: 60px;
+    height: 50px;
+    max-width: 60px;
+}
+.nav-into>img {
+    width: 129px !important;
+    height: 51px !important;
+}
+.nav-languages{
+    display: flex;
+    flex-direction: row;
+}
+div.nav-into.container{
+    display: flex;
+    justify-content: space-between;
+}
+div.collapse.navbar-collapse{
+    justify-content: flex-end;
+}
+/*div.collapse.navbar-collapse{
+    
+}
+@media screen and (min-width: 769px){
+   
+}
+
+
+@media screen and (max-width: 768px){
+    div.collapse.navbar-collapse.show{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+/*.header{
     height: 85px;
     /*position: fixed;*/
-    z-index: 100;
+    /*z-index: 100;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -84,4 +131,4 @@ li{
 }
 .Footer{
     text-decoration: none;
-}
+}*/

@@ -1,4 +1,4 @@
-//import './Header.css';
+import './NavigationBar.css';
 import {Link,Outlet} from "react-router-dom";
 import {Container, Nav, Navbar} from "react-bootstrap"
 import {useTranslation} from "react-i18next";
@@ -9,14 +9,16 @@ function NavigaitonBar() {
   const {t,i18n } = useTranslation();
   return(
     <>
-    <Navbar as="header" expand="lg" className="nav">
-      <Container>
-      <img src={require(`./data/imgs/logo.png`)}></img>
+   
+    <Navbar  as="header" expand="md" className="nav">
+      <Container className='nav-into'>
+      
+      <img src={require(`./data/imgs/new-logo.png`)}></img>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-        <Navbar.Collapse>
+        <Navbar.Collapse className='collapse'>
         <Nav >          
           <div className='header-links'>
-            <ul>
+            <ul className='navbar-nav ml-auto' >
               <li><Link to='/' className='Nav-link'>{t('home_page')}</Link></li>
               <li><Link to='/list' className='Nav-link'>{t("list_of_ph")}</Link></li>
             </ul>
