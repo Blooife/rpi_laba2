@@ -41,7 +41,7 @@ function Card(){
       </>
 
       <>
-      <Carousel variant="dark">
+      <Carousel variant="dark" interval={1000}>
       {
         phtData.gallery.map(p => (
           <Carousel.Item className="carouselImg">
