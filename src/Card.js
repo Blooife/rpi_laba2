@@ -1,9 +1,11 @@
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 import Carousel from 'react-bootstrap/Carousel';
+import {useTranslation} from "react-i18next";
 
 import PhotographersAPI from './PhotographersAPI';
 
 import {useParams, Link} from "react-router-dom";
+import { t } from 'i18next';
 
 function Card(){
     const params = useParams();
@@ -11,6 +13,8 @@ function Card(){
 
     const photographer = PhotographersAPI.photographers.find(p=>p.number == id);
     const phtData = PhotographersAPI.phData.find(p=>p.number == id);
+
+    const {t,i18n } = useTranslation();
 
     if(photographer===undefined){
     return <div>Sorry, but the photographer was not found</div>
@@ -53,7 +57,7 @@ function Card(){
       }    
       </Carousel>
 
-      <Link to='/List'>Вернуться к списку</Link>
+      <Link to='/List'>{t("back_to_list")}</Link>
 
     </div>
 
