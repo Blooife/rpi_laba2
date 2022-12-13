@@ -75,10 +75,7 @@ function Card(){
       <iframe src={phtData.maplink}
          width="600" height="450"  allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"
        ></iframe>
-  </div>
-
-
-      <Link to='/List'>{t("back_to_list")}</Link>
+      </div>     
 
     </div>
 
