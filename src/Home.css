@@ -20,16 +20,17 @@
 
 .home h1{
     padding-top: 40px;
-    font-family: "LatoRegular";
-    color:black;
+    color:#46acff;
     font-weight: bold;
+    font-size: 5em;
 }
 
-.home p{
+.home>p{
+    margin-right: 50px;
     padding-left: 70%;
-    font-family: "LatoRegular";
     color:black;
     font-size: 25px; 
-     
+    font-weight: bold;
+    text-align:right;
     width: 98%;
 }
