@@ -4,10 +4,9 @@
 .cardInfo{
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./data/imgs/bg.jpg);
+    background-image: url(./data/imgs/back.jpg);
     background-position: center;
     background-size: cover;
-    
     height: 600px;
     display:flex;
     color: #262626;
@@ -61,7 +60,7 @@
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./data/imgs/bg.jpg);
+    background-image: url(./data/imgs/back.jpg);
     background-position: center;
     background-size: cover;
     height: 600px;

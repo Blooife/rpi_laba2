@@ -3,6 +3,7 @@ import {useState} from 'react'
 import {useTranslation} from "react-i18next";
 import { Button } from "react-bootstrap";
 import PhotographersAPI from './PhotographersAPI';
+import "./List.css"
 
 function List() {
     const {t,i18n } = useTranslation();
@@ -15,7 +16,7 @@ function List() {
     })
     return(
       
-    <div>
+    <div className="list">
       <form className="formSearch">
         <h3>{t("list_ph")}</h3>
         <input
