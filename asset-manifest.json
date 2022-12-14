@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/rpi_laba2/static/css/main.63c6447f.css",
-    "main.js": "/rpi_laba2/static/js/main.4f471f12.js",
+    "main.css": "/rpi_laba2/static/css/main.4659b8b2.css",
+    "main.js": "/rpi_laba2/static/js/main.25545b06.js",
+    "static/media/backQuote.jpg": "/rpi_laba2/static/media/backQuote.63b71152bc0f407a6b31.jpg",
     "static/media/lato-regular.ttf": "/rpi_laba2/static/media/lato-regular.80c07943565d91b976e1.ttf",
     "static/media/2.jpg": "/rpi_laba2/static/media/2.95511493998959eedb76.jpg",
     "static/media/3.jpg": "/rpi_laba2/static/media/3.6b94d5ddd0753b595a4d.jpg",
@@ -27,17 +28,18 @@
     "static/media/back.jpg": "/rpi_laba2/static/media/back.0862a62e8250c367ab11.jpg",
     "static/media/header-grad.png": "/rpi_laba2/static/media/header-grad.47331f8bee80d9720a82.png",
     "static/media/logo.png": "/rpi_laba2/static/media/logo.06e0dc983478cc2c2717.png",
-    "static/media/new-logo.png": "/rpi_laba2/static/media/new-logo.0ac495b2f147a1b15f6e.png",
+    "static/media/new-logo.png": "/rpi_laba2/static/media/new-logo.97234a4a378c5d4e4c4c.png",
+    "static/media/new-logo2.png": "/rpi_laba2/static/media/new-logo2.724cd639af61f349e8e5.png",
     "static/media/alex.png": "/rpi_laba2/static/media/alex.7eac142f877c8e54f353.png",
     "static/media/vi.png": "/rpi_laba2/static/media/vi.63732668eb2c14b98cdf.png",
     "static/media/ksu.png": "/rpi_laba2/static/media/ksu.76f8f8ee7b7ff26d240f.png",
     "index.html": "/rpi_laba2/index.html",
     "static/media/getFetch.cjs": "/rpi_laba2/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.63c6447f.css.map": "/rpi_laba2/static/css/main.63c6447f.css.map",
-    "main.4f471f12.js.map": "/rpi_laba2/static/js/main.4f471f12.js.map"
+    "main.4659b8b2.css.map": "/rpi_laba2/static/css/main.4659b8b2.css.map",
+    "main.25545b06.js.map": "/rpi_laba2/static/js/main.25545b06.js.map"
   },
   "entrypoints": [
-    "static/css/main.63c6447f.css",
-    "static/js/main.4f471f12.js"
+    "static/css/main.4659b8b2.css",
+    "static/js/main.25545b06.js"
   ]
 }
