@@ -1,24 +1,10 @@
 footer{
     width: 100%;
+    height: 200px;
     background-color:rgb(35, 35, 35);
     display: flex;
     justify-content: space-between;
     align-content: center;
-}
-
-@media only screen and (max-width: 992px) {
-    footer {
-        width: 100%;
-        height: 200px;
-    }
-
-}
-
-@media only screen and (max-width: 600px) {
-    footer {
-        width: 100%;
-        height: 200px;
-    }
 }
 
 nav{
@@ -34,9 +20,9 @@ footer li img{
 }
 
 nav h2{
-    padding-bottom: 2%;
+    padding-bottom: 10px;
     color: lightblue;
-    font-size: 1em;
+    font-size: 30px;
 }
 ul{
     display: flex;
@@ -53,7 +39,7 @@ li{
 }
 
 li h6{
-    font-size: 1em;
+    font-size: 20px;
 }
 li h6,a,img{
     display: block;
