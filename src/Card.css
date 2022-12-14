@@ -36,17 +36,20 @@
     margin-bottom: 50px;
 }
 .cardText div{
-    background-color: #46acff;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+    height: 180px;
+    width: 700px;
+    text-align:left;
+    margin-top: 50px;
+    margin-bottom: 50px; 
 }
 .cardText>p{
-    height: 150px;
-    width: 900px;
-    text-align:left;
     font-weight: normal;
     color: #262626;
-    font-size: 1.5em;
-    margin-top: 50px;
-    margin-bottom: 50px;    
+    font-size: 1.5em;   
 }
 .title2{
     text-align:left;
@@ -70,4 +73,41 @@
 }
 .dopInfo>div,iframe{
     margin:auto ;
+}
+.cardQuote{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./data/imgs/backQuote.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display:flex;
+    flex-direction: column;
+    color: #262626;
+}
+.cardQuote div{
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+    height: max-content;
+    width: 800px;
+    text-align:left;
+    margin:auto;
+}
+.cardQuote div p{
+    text-align: justify;
+    font-weight: normal;
+    width: 740px;
+    color: #262626;
+    font-size: 1.6em;
+    margin:auto;   
+}
+.cardQuote div h6{
+    text-align: right;
+    font-weight: bold;
+    color: #46acff;
+    font-size: 2em; 
+    margin:auto;
+    margin-top: 50px;
 }
