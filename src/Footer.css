@@ -20,7 +20,6 @@ footer li img{
 }
 
 nav h2{
-    padding-bottom: 5px;
     color: lightblue;
     font-size: calc(10px + (30 - 10)*((100vw - 320px)/(1600-320)));
 }
@@ -50,6 +49,6 @@ li h6,a,img{
 li a{
     text-decoration: none;
     color: rgb(65, 208, 255);
-    font-size: calc(3px + (20 - 3)*((100vw - 320px)/(1600-320)));
+    font-size: calc(5px + (20 - 5)*((100vw - 320px)/(1600-320)));
 
 }
