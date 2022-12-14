@@ -54,9 +54,17 @@ function Card(){
       }
     </Timeline>
     </>
-    
-    <h2 className="title2">Фотогалерея</h2>
+    <div className="cardQuote">
+      <div>
+        <p> „{phtData.quote}“ </p>
+        <h6> -{phtData.quoteAuthor}</h6>
+      </div>
+    </div>
+
+
+
     <>
+      <h2 className="title2">Фотогалерея</h2>
       <Carousel variant="dark" interval={1000}>
       {
         phtData.gallery.map(p => (
