@@ -24,7 +24,7 @@ function getRandomInt(min, max) {
         </div>
         
         <div className="homeInfo">
-          <h2>{t("ph_of_day")}: </h2>
+          <h2>{t("ph_of_day")} </h2>
           <div className="cardH">
             <img className="cardImg" alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} height="400" width=""/>
             <div className="cardText">
