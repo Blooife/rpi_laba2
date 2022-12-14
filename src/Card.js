@@ -22,7 +22,7 @@ function Card(){
     return (
     <div>
       <div className="cardInfo">
-        <img className="cardImg" alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} height="400" width=""/>
+        <img alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} height="400" width=""/>
         <div className="cardText">
           <h1>{photographer.name}</h1>
           <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
@@ -54,6 +54,7 @@ function Card(){
       }
     </Timeline>
     </>
+    
     <div className="cardQuote">
       <div>
         <p> „{phtData.quote}“ </p>
@@ -64,7 +65,7 @@ function Card(){
 
 
     <>
-      <h2 className="title2">Фотогалерея</h2>
+      <h2 className="title2">{t("gallery")}</h2>
       <Carousel variant="dark" interval={1000}>
       {
         phtData.gallery.map(p => (

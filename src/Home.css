@@ -23,14 +23,14 @@
     color:#46acff;
     color: lightblue;
     font-weight: bold;
-    font-size: 5em;
+    font-size: calc(25px + (80 - 25)*((100vw - 320px)/(1600-320)));
 }
 
 .home p{
     margin-right: 50px;
     padding-left: 70%;
     color:black;
-    font-size: 25px; 
+    font-size: calc(15px + (25 - 15)*((100vw - 320px)/(1600-320))); 
     font-weight: bold;
     text-align:right;
     width: 98%;
@@ -50,7 +50,7 @@
 .homeInfo h2{
     color:#262626;
     font-weight: bold;
-    font-size: 4em;
+    font-size: calc(25px + (80 - 25)*((100vw - 320px)/(1600-320)));
     margin:auto;
     margin-top: 0;
     margin-bottom:0;
@@ -59,4 +59,8 @@
     display:flex;
     flex-direction: row;
     margin-top: 0;
+}
+
+.cardImg{
+    height: calc(150px + (420 - 150)*((100vw - 320px)/(1600-320)));
 }

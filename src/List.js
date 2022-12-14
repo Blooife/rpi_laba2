@@ -18,26 +18,29 @@ function List() {
       
     <div className="list">
       <form className="formSearch">
-        <h3>{t("list_ph")}</h3>
+        <h2>{t("list_ph")}</h2>
         <input
         type="text"
         placeholder={t('searchCaption')}
         onChange={(event)=> setValue(event.target.value)}
+        className = "searchInp"
         >
         </input>
       </form>
-      <ul>
-        {
-            filteredPhotogr.map(p=>(
-            <li key={p.number}>
-              <Button variant="outline-dark" as={Link} to={`/list/${p.number}`}>
-                <img alt="" src={require(`./data/${p.fileName}/portrait.jpg`)}/>
-                {t("name"+ p.number)}
-              </Button>
-            </li>
-          ))
-        }
-      </ul>
+        <div className="list_ph">
+        <ul >
+          {
+              filteredPhotogr.map(p=>(
+              <li key={p.number}>
+                <Button className="ph" variant="outline-dark" as={Link} to={`/list/${p.number}`}>
+                  <img alt="" src={require(`./data/${p.fileName}/portrait.jpg`)}/>
+                  {t("name"+ p.number)}
+                </Button>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
     )
   }
