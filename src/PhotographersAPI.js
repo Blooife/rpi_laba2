@@ -1,7 +1,7 @@
   const PhotographersAPI = {
     photographers: [
       { number: 1, name: "Антон Мотолько", fileName: "anton_motolko"},
-      { number: 2, name: "Бенедикт Генрик Тышкевич", fileName: "benedikt_genrik_tyshkevich"},
+      { number: 2, name: "Бенедикт Тышкевич", fileName: "benedikt_genrik_tyshkevich"},
       { number: 3, name: "Лев Дашкевич", fileName: "lev_dashkevich"},
       { number: 4, name: "Сергей Колтович", fileName: "sergei_koltovich"},
       { number: 5, name: "Ян Булгак", fileName: "yan_bulgak"}
