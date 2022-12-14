@@ -11,12 +11,11 @@ function NavigaitonBar() {
     <>
 
     <Navbar   as="header" expand="md" className="nav navbar-dark " >
-      <Container>
+      <Container >
       <Navbar.Brand>
       <img src={require(`./data/imgs/new-logo2.png`)} alt='logo'
       className = 'align-top'
-      height = "51"
-      width = "129"
+      
       ></img>
       </Navbar.Brand>
       
