@@ -5,6 +5,7 @@ footer{
     display: flex;    
     align-content: center;
     
+    
 }
 
 nav{
@@ -12,6 +13,7 @@ nav{
     margin:auto;
     display: block;
     text-align: center;
+    
 }
 
 footer li img{    
