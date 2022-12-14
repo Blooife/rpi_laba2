@@ -54,10 +54,10 @@
     margin-top: calc(15px + (50 - 15)*((100vw - 320px)/(1600-320)));
     margin-bottom: calc(15px + (50 - 15)*((100vw - 320px)/(1600-320)));
 }
-.cardText>p{
+.cardText p{
     font-weight: normal;
     color: #262626;
-    font-size: 1.5em;   
+    font-size: calc(15px + (20 - 15)*((100vw - 320px)/(1600-320)));
 }
 
 @media (max-width: 600px) {
@@ -76,7 +76,7 @@
     .cardText h2{
         text-align: center;
     }
-    .cardText div{
+    .shortInfoWrap{
         height: max-content;
         margin:auto;
     }
@@ -102,8 +102,12 @@
     display:flex;
     flex-direction: row;
 }
-.dopInfo>div,iframe{
-    margin:auto ;
+.dopInfo div,iframe{
+    display:flex;
+    margin:auto;
+    max-width:90%;
+    /*height: auto;
+    /*height: max-content;*/
 }
 
 @media (max-width: 600px) {
@@ -113,8 +117,6 @@
     }
     
 }
-
-
 
 .cardQuote{
     
@@ -136,14 +138,14 @@
     border-radius: 8px;
     box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
     height: max-content;
-    width: calc(300px + (800 - 300)*((100vw - 320px)/(1600-320)));
+    width: calc(300px + (900 - 300)*((100vw - 320px)/(1600-320)));
     text-align:left;
     margin:auto;
 }
 .cardQuote div p{
     text-align: justify;
     font-weight: normal;
-    width: calc(280px + (740 - 280)*((100vw - 320px)/(1600-320)));
+    width: calc(280px + (800 - 280)*((100vw - 320px)/(1600-320)));
     color: #262626;
     font-size: calc(14px + (30 - 14)*((100vw - 320px)/(1600-320)));
     margin:auto;   
