@@ -32,10 +32,12 @@ function NavigaitonBar() {
         </Nav>
           <div className="nav-languages">
             <Nav.Link className="lang" onClick={() => i18n.changeLanguage('ru')}>
+                <img src={require(`./data/imgs/ru_flag.png`)}></img>
                  <span>{t("russian_lang")}</span>
             </Nav.Link>
             <Nav.Link className="lang" onClick={() => i18n.changeLanguage('en')}>                                
-             <span>{t("english_lang")}</span>
+              <img src={require(`./data/imgs/en_flag.png`)}></img>
+              <span>{t("english_lang")}</span>
              </Nav.Link>
             </div>
         </Navbar.Collapse>

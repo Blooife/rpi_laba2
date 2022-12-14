@@ -1,0 +1,8 @@
+.list{
+    
+    background-image: url(./data/imgs/back.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    color: #262626;
+}

@@ -1,3 +1,73 @@
 .carouselImg{
-    text-align: center
+    text-align: center;
+}
+.cardInfo{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./data/imgs/back.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display:flex;
+    color: #262626;
+}
+.cardImg{
+    margin:auto ;
+    margin-top: 75px;
+}
+.cardText{
+    width: 1000px;
+    text-align: justify;
+}
+.cardText>h1{
+    text-align:left;
+    font-weight: bold;
+    color: #46acff;
+    font-size: 5em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.cardText>h2{
+    text-align:left;
+    font-weight: bold;
+    color: #262626;
+    font-size: 2.7em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cardText div{
+    background-color: #46acff;
+}
+.cardText>p{
+    height: 150px;
+    width: 900px;
+    text-align:left;
+    font-weight: normal;
+    color: #262626;
+    font-size: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 50px;    
+}
+.title2{
+    text-align:left;
+    font-weight: bold;
+    color: #46acff;
+    font-size: 4em;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.dopInfo{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./data/imgs/back.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display:flex;
+    flex-direction: row;
+}
+.dopInfo>div,iframe{
+    margin:auto ;
 }

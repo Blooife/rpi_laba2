@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("./fonts/lato-regular.ttf") format("TrueType");
+    font-style: normal;
+    font-weight: normal; }
+
+.home{
+    background-image: url("./data/imgs/home_bg1.png");
+    height: 500px;
+    width: 100%;
+    opacity: .9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+
+}
+
+.home>h1{
+    padding-top: 40px;
+    color:#46acff;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.home>p{
+    margin-right: 50px;
+    padding-left: 70%;
+    color:black;
+    font-size: 25px; 
+    font-weight: bold;
+    text-align:right;
+    width: 98%;
+}
+
+.homeInfo{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./data/imgs/back.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    color: #262626;
+}
+.homeInfo>h2{
+    color:#262626;
+    font-weight: bold;
+    font-size: 4em;
+    margin:auto;
+    margin-top: 0;
+    margin-bottom:0;
+}
+.cardH{
+    display:flex;
+    flex-direction: row;
+    margin-top: 0;
+}

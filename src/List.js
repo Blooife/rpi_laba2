@@ -1,7 +1,9 @@
 import {Link} from "react-router-dom";
 import {useState} from 'react'
 import {useTranslation} from "react-i18next";
+import { Button } from "react-bootstrap";
 import PhotographersAPI from './PhotographersAPI';
+import "./List.css"
 
 function List() {
     const {t,i18n } = useTranslation();
@@ -14,7 +16,7 @@ function List() {
     })
     return(
       
-    <div>
+    <div className="list">
       <form className="formSearch">
         <h3>{t("list_ph")}</h3>
         <input
@@ -28,7 +30,10 @@ function List() {
         {
             filteredPhotogr.map(p=>(
             <li key={p.number}>
-              <Link to={`/list/${p.number}`}>{t("name"+ p.number)}</Link>
+              <Button variant="outline-dark" as={Link} to={`/list/${p.number}`}>
+                <img alt="" src={require(`./data/${p.fileName}/portrait.jpg`)}/>
+                {t("name"+ p.number)}
+              </Button>
             </li>
           ))
         }

@@ -21,14 +21,29 @@ function Card(){
     }
     return (
     <div>
-      <img alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
-      <h1>{photographer.name} (#{photographer.number})</h1>
-      <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
+      <div className="cardInfo">
+        <img className="cardImg" alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} height="400" width=""/>
+        <div className="cardText">
+          <h1>{photographer.name}</h1>
+          <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
+          <div>
+            <p >{phtData.shortInfo}</p>
+          </div>  
+        </div>
+      </div>
       <>
       <Timeline lineColor={'#ddd'}>
       {
         phtData.events.map(p => (
           <TimelineItem
+            style={{ color: '#000' }}
+            dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
+            bodyContainerStyle={{
+              background: '#ddd',
+              padding: '20px',
+              borderRadius: '8px',
+              boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+            }}
             dateText= {p.year} >
             <p>
               {p.description}
@@ -38,9 +53,10 @@ function Card(){
         ))
       }
     </Timeline>
-      </>
-
-      <>
+    </>
+    
+    <h2 className="title2">Фотогалерея</h2>
+    <>
       <Carousel variant="dark" interval={1000}>
       {
         phtData.gallery.map(p => (
@@ -53,25 +69,22 @@ function Card(){
         ))
         
       }    
-    </Carousel>
-      </>
-
+      </Carousel>
+    </>
+    <div className="dopInfo">
       <div className="video-wrapper">
-                <iframe className="person-video" src={phtData.videoLink} frameborder="0"
-                width="700" height="450"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen>
-                </iframe>
+              <iframe className="person-video" src={phtData.videoLink} frameborder="0"
+                  width="600" height="400"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen>
+              </iframe>
       </div>
-      <div>
+
       <iframe src={phtData.maplink}
-         width="600" height="450"  allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"
-       ></iframe>
-  </div>
-
-
-      <Link to='/List'>{t("back_to_list")}</Link>
-
+         width="600" height="400"  allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    
     </div>
 
     );
