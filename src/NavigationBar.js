@@ -13,7 +13,9 @@ function NavigaitonBar() {
     <Navbar  as="header" expand="md" className="nav">
       <Container className='nav-into'>
       
-      <img src={require(`./data/imgs/new-logo.png`)}></img>
+      <img src={require(`./data/imgs/new-logo.png`)} alt='logo'
+      className = 'm-auto float-start'
+      ></img>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse className='collapse'>
         <Nav >          
