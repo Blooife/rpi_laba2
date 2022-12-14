@@ -32,7 +32,7 @@ function List() {
           {
               filteredPhotogr.map(p=>(
               <li key={p.number}>
-                <Button className="ph" variant="outline-dark" as={Link} to={`/list/${p.number}`}>
+                <Button className="but" variant="outline-dark" as={Link} to={`/list/${p.number}`}>
                   <img alt="" src={require(`./data/${p.fileName}/portrait.jpg`)}/>
                   {t("name"+ p.number)}
                 </Button>
