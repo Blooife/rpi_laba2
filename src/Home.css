@@ -18,14 +18,14 @@
 
 }
 
-.home>h1{
+.home h1{
     padding-top: 40px;
     color:#46acff;
     font-weight: bold;
     font-size: 5em;
 }
 
-.home>p{
+.home p{
     margin-right: 50px;
     padding-left: 70%;
     color:black;
@@ -46,7 +46,7 @@
     flex-direction: column;
     color: #262626;
 }
-.homeInfo>h2{
+.homeInfo h2{
     color:#262626;
     font-weight: bold;
     font-size: 4em;

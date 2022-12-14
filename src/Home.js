@@ -3,6 +3,7 @@ import {useTranslation} from "react-i18next";
 import PhotographersAPI from './PhotographersAPI';
 import { Button } from "react-bootstrap";
 import "./Home.css"
+import "./Card.css"
 
 
 
@@ -30,7 +31,9 @@ function getRandomInt(min, max) {
             <div className="cardText">
               <h1>{photographer.name}</h1>
               <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
-              <p >{phtData.shortInfo}</p>
+              <div>
+                <p>{phtData.shortInfo}</p>
+              </div>
               <Button variant="outline-dark" as={Link} to={`/list/${photographer.number}`}>{t("l_more")}</Button>
             </div>
           </div>

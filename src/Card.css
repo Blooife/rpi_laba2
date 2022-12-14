@@ -36,17 +36,20 @@
     margin-bottom: 50px;
 }
 .cardText div{
-    background-color: #46acff;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+    height: 180px;
+    width: 700px;
+    text-align:left;
+    margin-top: 50px;
+    margin-bottom: 50px; 
 }
 .cardText>p{
-    height: 150px;
-    width: 900px;
-    text-align:left;
     font-weight: normal;
     color: #262626;
-    font-size: 1.5em;
-    margin-top: 50px;
-    margin-bottom: 50px;    
+    font-size: 1.5em;   
 }
 .title2{
     text-align:left;
