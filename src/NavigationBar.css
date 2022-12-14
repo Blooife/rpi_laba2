@@ -6,6 +6,7 @@
 
 .nav{
     width: 100%;
+    min-width: 320px;
     background-color: #262626;
     display: flex;
     justify-content: center;
@@ -26,6 +27,7 @@
     text-decoration: none;
     color: #c4c4c4;
     font-family: LatoRegular;
+    font-size: 15px ;
 }
 .Nav-link:hover{
     color:#61b8ff;
@@ -37,105 +39,16 @@ div.collapse.navbar-collapse{
     text-decoration: none;
     color: #c4c4c4;
     font-family: LatoRegular;
+    font-size: 15px ;
 }
 .lang>span:hover{
     color: #61b8ff;
 }
-
-/*div.collapse.navbar-collapse{
-    
-}
-@media screen and (min-width: 769px){
-   
-}
-
-
 @media screen and (max-width: 768px){
-    div.collapse.navbar-collapse.show{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+    .Nav-link{
+        font-size: 10px ;
+    }
+    .lang>span{
+        font-size: 10px ;
     }
 }
-/*.header{
-    height: 85px;
-    /*position: fixed;*/
-    /*z-index: 100;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.header>nav{
-    width: 1600px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-image: url(./data/imgs/header-grad.png); 
-}
-.header>nav>img{
-    width: 158px;
-    height: 77px;
-}
-.header>nav>h3{
-    font-family: LatoRegular;
-    color:white;
-    font-size: 18px;
-}
-.header-links{
-    height: 85px;
-    width: 825px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-.language{
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 85px;
-    
-}
-.language>h3{
-    width: 50px;
-    font-family: LatoRegular;
-    color:white;
-    font-size: 18px; 
-}
-.header-links>ul{
-    height: 85px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 735px;
-}
-.header-links>ul>li{
-    display: flex;
-    align-items: center;
-    border-top: 3px solid transparent;
-    padding-left: 13px;
-    padding-right: 13px;
-    padding-bottom: 9px;
-}
-.header-links>ul>li:hover{
-    border-top: 3px solid #c2c0b8;
-}
-.Nav-link{
-    font-family: LatoRegular;
-    text-decoration: none;
-    color:white;
-    font-size: 18px;
-}
-.Nav-link:hover{
-    color:white;
-}
-
-li{
-    list-style-type: none;
-   
-}
-.Footer{
-    text-decoration: none;
-}*/
