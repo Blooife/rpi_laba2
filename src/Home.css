@@ -35,11 +35,10 @@
     width: 98%;
 }
 
-.cardInfo{
+.homeInfo{
     margin-left: auto;
     margin-right: auto;
-    /*background-image: url(./data/imgs/back.jpg);*/
-    background-color: #46acff;
+    background-image: url(./data/imgs/back.jpg);
     background-position: center;
     background-size: cover;
     height: 700px;
@@ -47,14 +46,16 @@
     flex-direction: column;
     color: #262626;
 }
-.cardInfo>h2{
-    padding-top: 40px;
+.homeInfo>h2{
     color:#262626;
     font-weight: bold;
     font-size: 4em;
     margin:auto;
+    margin-top: 0;
+    margin-bottom:0;
 }
-.vika{
+.cardH{
     display:flex;
     flex-direction: row;
+    margin-top: 0;
 }

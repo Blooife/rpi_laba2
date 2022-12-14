@@ -3,7 +3,7 @@ import {useTranslation} from "react-i18next";
 import PhotographersAPI from './PhotographersAPI';
 import { Button } from "react-bootstrap";
 import "./Home.css"
-import "./Card.css"
+
 
 
 function getRandomInt(min, max) {
@@ -23,9 +23,9 @@ function getRandomInt(min, max) {
           <p> {t("home_text")}</p>
         </div>
         
-        <div className="cardInfo">
+        <div className="homeInfo">
           <h2>{t("ph_of_day")}: </h2>
-          <div className="vika">
+          <div className="cardH">
             <img className="cardImg" alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} height="400" width=""/>
             <div className="cardText">
               <h1>{photographer.name}</h1>
