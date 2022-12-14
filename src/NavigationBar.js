@@ -9,27 +9,27 @@ function NavigaitonBar() {
   const {t,i18n } = useTranslation();
   return(
     <>
-   
-    <Navbar  as="header" expand="md" className="nav">
-      <Container className='nav-into'>
+
+    <Navbar   as="header" expand="md" className="nav navbar-dark " >
+      <Container>
       <Navbar.Brand>
-      <img src={require(`./data/imgs/new-logo.png`)} alt='logo'
+      <img src={require(`./data/imgs/new-logo2.png`)} alt='logo'
       className = 'align-top'
-      height = "30"
-      width = "60"
+      height = "51"
+      width = "129"
       ></img>
       </Navbar.Brand>
       
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-        <Navbar.Collapse className='collapse'>
-        <Nav >          
+        <Navbar.Collapse className='collapse' >
+        <Nav class="navbar navbar-dark" >          
           <div className='header-links'>
             <ul className='navbar-nav ml-auto' >
-              <li><Link to='/' className='Nav-link'>{t('home_page')}</Link></li>
-              <li><Link to='/list' className='Nav-link'>{t("list_of_ph")}</Link></li>
+              <li className='link'><Link to='/' className='Nav-link'>{t('home_page')}</Link></li>
+              <li className='link'><Link to='/list' className='Nav-link'>{t("list_of_ph")}</Link></li>
             </ul>
           </div>
-        </Nav>
+        
           <div className="nav-languages">
             <Nav.Link className="lang" onClick={() => i18n.changeLanguage('ru')}>
                 <img src={require(`./data/imgs/ru_flag.png`)}></img>
@@ -40,6 +40,7 @@ function NavigaitonBar() {
               <span>{t("english_lang")}</span>
              </Nav.Link>
             </div>
+            </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
