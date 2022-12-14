@@ -27,7 +27,7 @@
     text-decoration: none;
     color: #c4c4c4;
     font-family: LatoRegular;
-    font-size: 15px !important;
+    font-size: 15px ;
 }
 .Nav-link:hover{
     color:#61b8ff;
@@ -39,9 +39,16 @@ div.collapse.navbar-collapse{
     text-decoration: none;
     color: #c4c4c4;
     font-family: LatoRegular;
-    font-size: 15px !important;
+    font-size: 15px ;
 }
 .lang>span:hover{
     color: #61b8ff;
 }
-
+@media screen and (max-width: 768px){
+    .Nav-link{
+        font-size: 10px ;
+    }
+    .lang>span{
+        font-size: 10px ;
+    }
+}
