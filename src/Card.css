@@ -39,7 +39,7 @@
     margin-top: calc(15px + (50 - 15)*((100vw - 320px)/(1600-320)));
     margin-bottom: calc(15px + (50 - 15)*((100vw - 320px)/(1600-320)));
 }
-.cardText div{
+.shortInfoWrap{
     background-color: #ddd;
     padding: 20px;
     border-radius: 8px;
@@ -73,7 +73,7 @@
     .cardText h2{
         text-align: center;
     }
-    .cardText div{
+    .shortInfoWrap{
         height: max-content;
         margin:auto;
     }

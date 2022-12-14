@@ -29,10 +29,12 @@ function getRandomInt(min, max) {
             <div className="cardText">
               <h1>{photographer.name}</h1>
               <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
-              <div>
+              <div className="shortInfoWrap">
                 <p>{phtData.shortInfo}</p>
               </div>
+              <div class="button-wrapper">
                 <Button variant="outline-dark" as={Link} to={`/list/${photographer.number}`}>{t("l_more")}</Button>
+              </div>
              </div>
           </div>
         </div>

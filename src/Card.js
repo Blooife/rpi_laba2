@@ -26,7 +26,7 @@ function Card(){
         <div className="cardText">
           <h1>{photographer.name}</h1>
           <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
-          <div>
+          <div className="shortInfoWrap">
             <p >{phtData.shortInfo}</p>
           </div>  
         </div>
@@ -54,7 +54,7 @@ function Card(){
       }
     </Timeline>
     </>
-    
+
     <div className="cardQuote">
       <div>
         <p> „{phtData.quote}“ </p>
