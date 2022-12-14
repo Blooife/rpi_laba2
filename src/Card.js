@@ -26,7 +26,9 @@ function Card(){
         <div className="cardText">
           <h1>{photographer.name}</h1>
           <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
-          <p >{phtData.shortInfo}</p>
+          <div>
+            <p >{phtData.shortInfo}</p>
+          </div>  
         </div>
       </div>
       <>
