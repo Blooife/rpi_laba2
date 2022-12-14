@@ -42,7 +42,7 @@ i18n
                   gallery:"Photo gallery",
 
                   name1: "Anton Motolko",
-                  name2: "Benedikt Henrik Tyshkevich",
+                  name2: "Benedikt Tyshkevich",
                   name3: "Lev Dashkevich",
                   name4: "Sergey Koltovich",
                   name5: "Yan Bulgak",
@@ -70,7 +70,7 @@ i18n
                     gallery: "Фотогалерея",
 
                     name1: "Антон Мотолько",
-                    name2: "Бенедикт Генрик Тышкевич",
+                    name2: "Бенедикт Тышкевич",
                     name3: "Лев Дашкевич",
                     name4: "Сергей Колтович",
                     name5: "Ян Булгак",
