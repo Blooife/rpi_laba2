@@ -23,7 +23,7 @@
     text-align:left;
     font-weight: bold;
     color: #46acff;
-    font-size: 5em;
+    font-size: calc(25px + (80 - 25)*((100vw - 320px)/(1600-320)));
     margin-top: 50px;
     margin-bottom: 20px;
 }
