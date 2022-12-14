@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    height: calc(100px + (220 - 100)*((100vw - 320px)/(1600-320)));
+    height: calc(140px + (240 - 140)*((100vw - 320px)/(1600-320)));
     background-color:rgb(35, 35, 35);
     display: flex;    
     align-content: center;
@@ -50,7 +50,7 @@ li h6,a,img{
 }
 li a{
     text-decoration: none;
-    color: rgb(65, 208, 255);
+    color: lightblue;
     font-size: calc(10px + (20 - 10)*((100vw - 320px)/(1600-320)));
 
 }
