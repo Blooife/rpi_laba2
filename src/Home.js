@@ -3,6 +3,7 @@ import {useTranslation} from "react-i18next";
 import PhotographersAPI from './PhotographersAPI';
 import { Button } from "react-bootstrap";
 import "./Home.css"
+import "./Card.css"
 
 
 function getRandomInt(min, max) {
@@ -13,6 +14,8 @@ function getRandomInt(min, max) {
     const {t,i18n } = useTranslation();
     let dayPh = getRandomInt(1,6);
     const photographer = PhotographersAPI.photographers.find(p=>p.number === dayPh);
+    const phtData = PhotographersAPI.phData.find(p=>p.number === dayPh);
+
     return (
       <div>
         <div className="home">
@@ -20,12 +23,19 @@ function getRandomInt(min, max) {
           <p> {t("home_text")}</p>
         </div>
         
-        <div className="ph_of_day">
+        <div className="cardInfo">
           <h2>{t("ph_of_day")}: </h2>
-          <h1>{photographer.name} (#{photographer.number})</h1>
-          <img  alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} />
-          <Button variant="outline-dark" as={Link} to={`/list/${photographer.number}`}>{t("l_more")}</Button>
+          <div className="vika">
+            <img className="cardImg" alt="" src={require(`./data/${photographer.fileName}/portrait.jpg`)} height="400" width=""/>
+            <div className="cardText">
+              <h1>{photographer.name}</h1>
+              <h2>{phtData.birthDate} - {phtData.deathDate}</h2>
+              <p >{phtData.shortInfo}</p>
+              <Button variant="outline-dark" as={Link} to={`/list/${photographer.number}`}>{t("l_more")}</Button>
+            </div>
+          </div>
         </div>
+
       </div>
     
     );
