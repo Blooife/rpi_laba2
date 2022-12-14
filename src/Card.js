@@ -64,7 +64,7 @@ function Card(){
 
 
     <>
-      <h2 className="title2">Фотогалерея</h2>
+      <h2 className="title2">{t("gallery")}</h2>
       <Carousel variant="dark" interval={1000}>
       {
         phtData.gallery.map(p => (

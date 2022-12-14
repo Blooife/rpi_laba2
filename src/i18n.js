@@ -39,6 +39,7 @@ i18n
                   sasha:"Sasha Milkovskaya",
                   searchCaption: "Search for a photographer", 
                   list_ph: "List of photographers",
+                  gallery:"Photo gallery",
 
                   name1: "Anton Motolko",
                   name2: "Benedikt Henrik Tyshkevich",
@@ -66,6 +67,7 @@ i18n
                     sasha: "Саша Милковская", 
                     searchCaption: "Поиск фотографа",  
                     list_ph: "Список фотографов",
+                    gallery: "Фотогалерея",
 
                     name1: "Антон Мотолько",
                     name2: "Бенедикт Генрик Тышкевич",
