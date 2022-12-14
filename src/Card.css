@@ -11,13 +11,20 @@
     display:flex;
     color: #262626;
 }
+
+@media (max-width: 600px) {
+.cardInfo{
+    flex-direction: column;
+}
+}
 .cardImg{
     margin:auto ;
-    margin-top: 75px;
+    margin-top: calc(75px + (20 - 75)*((100vw - 320px)/(1600-320)));
 }
 .cardText{
     width: 1000px;
     text-align: justify;
+    margin-left: calc(0px + (30 - 0)*((100vw - 320px)/(1600-320)));;
 }
 .cardText>h1{
     text-align:left;
