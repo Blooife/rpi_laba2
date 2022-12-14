@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/rpi_laba2/static/css/main.ed5f9a4c.css",
-    "main.js": "/rpi_laba2/static/js/main.9402638f.js",
+    "main.css": "/rpi_laba2/static/css/main.657cba4b.css",
+    "main.js": "/rpi_laba2/static/js/main.44021d1d.js",
     "static/media/lato-regular.ttf": "/rpi_laba2/static/media/lato-regular.80c07943565d91b976e1.ttf",
     "static/media/2.jpg": "/rpi_laba2/static/media/2.7f942078bf0579851aa9.jpg",
     "static/media/3.jpg": "/rpi_laba2/static/media/3.6b94d5ddd0753b595a4d.jpg",
     "static/media/4.jpg": "/rpi_laba2/static/media/4.c701b20012b2fbd3662b.jpg",
     "static/media/1.jpg": "/rpi_laba2/static/media/1.6fe241c1f2a49a94c01e.jpg",
+    "static/media/b.jpg": "/rpi_laba2/static/media/b.76993e6906f9c4b5a89c.jpg",
+    "static/media/home_bg1.png": "/rpi_laba2/static/media/home_bg1.b8be5a4065f13d3fc67c.png",
     "static/media/5.jpg": "/rpi_laba2/static/media/5.038df3dc1e32b74ecaf8.jpg",
+    "static/media/bck.jpg": "/rpi_laba2/static/media/bck.26ae4dee9e805e124a20.jpg",
+    "static/media/u.jpg": "/rpi_laba2/static/media/u.e2a137ccaf65ea5fd8aa.jpg",
     "static/media/6.jpg": "/rpi_laba2/static/media/6.64d44c57c6a0abced7b8.jpg",
     "static/media/7.jpg": "/rpi_laba2/static/media/7.9b9ac2df4856e0c48843.jpg",
+    "static/media/k.jpg": "/rpi_laba2/static/media/k.06ca10389e1b247eb463.jpg",
     "static/media/bg.jpg": "/rpi_laba2/static/media/bg.82358e3ba70287916468.jpg",
+    "static/media/p.jpg": "/rpi_laba2/static/media/p.ccf597f9094f19f04474.jpg",
     "static/media/portrait.jpg": "/rpi_laba2/static/media/portrait.137c466d732ef140bf60.jpg",
+    "static/media/back.jpg": "/rpi_laba2/static/media/back.0862a62e8250c367ab11.jpg",
     "static/media/header-grad.png": "/rpi_laba2/static/media/header-grad.47331f8bee80d9720a82.png",
-    "static/media/bg-main.jpg": "/rpi_laba2/static/media/bg-main.2a7331527b07bf52c13f.jpg",
     "static/media/logo.png": "/rpi_laba2/static/media/logo.06e0dc983478cc2c2717.png",
     "static/media/new-logo.png": "/rpi_laba2/static/media/new-logo.0ac495b2f147a1b15f6e.png",
     "static/media/alex.png": "/rpi_laba2/static/media/alex.7eac142f877c8e54f353.png",
@@ -21,11 +27,11 @@
     "static/media/ksu.png": "/rpi_laba2/static/media/ksu.76f8f8ee7b7ff26d240f.png",
     "index.html": "/rpi_laba2/index.html",
     "static/media/getFetch.cjs": "/rpi_laba2/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.ed5f9a4c.css.map": "/rpi_laba2/static/css/main.ed5f9a4c.css.map",
-    "main.9402638f.js.map": "/rpi_laba2/static/js/main.9402638f.js.map"
+    "main.657cba4b.css.map": "/rpi_laba2/static/css/main.657cba4b.css.map",
+    "main.44021d1d.js.map": "/rpi_laba2/static/js/main.44021d1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed5f9a4c.css",
-    "static/js/main.9402638f.js"
+    "static/css/main.657cba4b.css",
+    "static/js/main.44021d1d.js"
   ]
 }
