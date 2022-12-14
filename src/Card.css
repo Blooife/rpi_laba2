@@ -35,17 +35,18 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.cardText div{
+    background-color: #46acff;
+}
 .cardText>p{
-    width: 550px;
-    background-image: "src\data\imgs\new-logo.png";
+    height: 150px;
+    width: 900px;
     text-align:left;
     font-weight: normal;
     color: #262626;
     font-size: 1.5em;
     margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: '#ddd';
-        
+    margin-bottom: 50px;    
 }
 .title2{
     text-align:left;
