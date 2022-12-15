@@ -21,7 +21,6 @@
 .home h1{
     padding-top: 40px;
     color:#46acff;
-    color: lightblue;
     font-weight: bold;
     font-size: calc(25px + (80 - 25)*((100vw - 320px)/(1600-320)));
 }
@@ -100,10 +99,25 @@
     color: #262626;
     font-size: calc(15px + (20 - 15)*((100vw - 320px)/(1600-320)));
 }
+
+@media (max-width: 890px){
+    .home p{
+        color:rgb(197, 196, 196);
+        margin:auto;
+        
+        padding-left: 0px;
+    }
+}
 @media (max-width: 600px) {
     .homeInfo{
         flex-direction: column;
         height: max-content;
+    }
+    .home p{
+        color:rgb(197, 196, 196);
+        margin:auto;
+        
+        padding-left: 0px;
     }
     .cardH{
         flex-direction: column;

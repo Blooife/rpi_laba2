@@ -102,17 +102,41 @@
 .dopInfo div,iframe{
     display:flex;
     margin:auto;
-    max-width:90%;
-    /*height: auto;
-    /*height: max-content;*/
+    max-width:100%;
 }
 
-@media (max-width: 600px) {
-    .dopInfo{
-        flex-direction: column;
-        height: max-content;
+.person-video{
+    width:calc(300px + (600 - 300)*((100vw - 320px)/(1280-320))); 
+    height:calc(100px + (400 - 100)*((100vw - 320px)/(1280-320)));
+}
+.map_info{
+    width:500px;
+    height:300px;
+    width:calc(200px + (500 - 200)*((100vw - 320px)/(1280-320))); 
+    height:calc(200px + (300 - 200)*((100vw - 320px)/(1280-320)));
+}
+
+@media (max-width: 690px) {
+    .video-wrapper{
+        margin: auto;
+        display: flex;
+        width: 100%;
     }
-    
+    .dopInfo{
+        flex-direction: column;        
+        width: 100%;
+        align-items: center;
+    }
+    .person-video{         
+        width:calc(400px + (600 - 200)*((100vw - 320px)/(1280-320))); 
+        height:calc(200px + (400 - 200)*((100vw - 320px)/(1280-320)));
+    }
+
+    .map_info{       
+        margin: auto; 
+        width:calc(200px + (600 - 200)*((100vw - 320px)/(1280-320))); 
+        height:calc(200px + (400 - 200)*((100vw - 320px)/(1280-320)));
+    }      
 }
 
 .cardQuote{

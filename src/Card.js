@@ -81,16 +81,17 @@ function Card(){
       </Carousel>
     </>
     <div className="dopInfo">
-      <div className="video-wrapper">
+          <div className="video-wrapper">
               <iframe className="person-video" src={phtData.videoLink} frameborder="0"
-                  width="600" height="400"
+                  
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen>
               </iframe>
-      </div>
+          </div>
+      
 
-      <iframe src={phtData.maplink}
-         width="600" height="400"  allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+      <iframe src={phtData.maplink} className="map_info"
+           allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
     
