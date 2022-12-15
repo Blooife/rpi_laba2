@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rpi_laba2/static/css/main.e4c9953a.css",
-    "main.js": "/rpi_laba2/static/js/main.aa6dd7c6.js",
+    "main.css": "/rpi_laba2/static/css/main.68fcb709.css",
+    "main.js": "/rpi_laba2/static/js/main.55bbe4a1.js",
     "static/media/backQuote.jpg": "/rpi_laba2/static/media/backQuote.63b71152bc0f407a6b31.jpg",
     "static/media/lato-regular.ttf": "/rpi_laba2/static/media/lato-regular.80c07943565d91b976e1.ttf",
     "static/media/2.jpg": "/rpi_laba2/static/media/2.95511493998959eedb76.jpg",
@@ -35,11 +35,11 @@
     "static/media/ksu.png": "/rpi_laba2/static/media/ksu.76f8f8ee7b7ff26d240f.png",
     "index.html": "/rpi_laba2/index.html",
     "static/media/getFetch.cjs": "/rpi_laba2/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.e4c9953a.css.map": "/rpi_laba2/static/css/main.e4c9953a.css.map",
-    "main.aa6dd7c6.js.map": "/rpi_laba2/static/js/main.aa6dd7c6.js.map"
+    "main.68fcb709.css.map": "/rpi_laba2/static/css/main.68fcb709.css.map",
+    "main.55bbe4a1.js.map": "/rpi_laba2/static/js/main.55bbe4a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4c9953a.css",
-    "static/js/main.aa6dd7c6.js"
+    "static/css/main.68fcb709.css",
+    "static/js/main.55bbe4a1.js"
   ]
 }
