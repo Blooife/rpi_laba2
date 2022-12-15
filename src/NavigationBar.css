@@ -6,12 +6,15 @@
 
 .nav{
     width: 100%;
-    min-width: 320px;
+    height: calc(20px + (220 - 100)*((100vw - 320px)/(1600-320)));
     background-color: #262626;
     display: flex;
     justify-content: center;
 }
-
+img.align-top{
+    width: calc(93px + (279 - 30)*((100vw - 320px)/(1600-320)));
+    height: calc(37px + (110 - 30)*((100vw - 320px)/(1600-320)));
+}
 .nav-languages{
     display: flex;
     flex-direction: row;
@@ -27,7 +30,7 @@
     text-decoration: none;
     color: #c4c4c4;
     font-family: LatoRegular;
-    font-size: 16px ;
+    font-size: calc(10px + (20 - 10)*((100vw - 320px)/(1600-320)));
 }
 .Nav-link:hover{
     color:#61b8ff;
@@ -39,7 +42,7 @@ div.collapse.navbar-collapse{
     text-decoration: none;
     color: #c4c4c4;
     font-family: LatoRegular;
-    font-size: 16px ;
+    font-size: calc(10px + (20 - 10)*((100vw - 320px)/(1600-320)));
 }
 .lang>span:hover{
     color: #61b8ff;
@@ -50,5 +53,8 @@ div.collapse.navbar-collapse{
     }
     .lang>span{
         font-size: 14px ;
+    }
+    .nav{
+        height: fit-content;
     }
 }

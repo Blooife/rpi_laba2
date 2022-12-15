@@ -7,7 +7,7 @@
     background-image: url(./data/imgs/back.jpg);
     background-position: center;
     background-size: cover;
-    height:calc(870px + (600 - 870)*((100vw - 320px)/(1600-320)));
+   /* height:calc(870px + (600 - 870)*((100vw - 320px)/(1600-320)));*/
     display:flex;
     color: #262626;
 }
@@ -17,10 +17,13 @@
     margin-top: calc(20px + (75 - 20)*((100vw - 320px)/(1600-320)));
     margin-bottom:calc(20px + (75 - 20)*((100vw - 320px)/(1600-320)));
     
+    
 }
 .cardText{
     width: calc(300px + (1000 - 300)*((100vw - 320px)/(1600-320)));
     text-align: justify;
+    padding: 0%;
+    height: fit-content;
 }
 .cardText>h1{
     text-align:left;
@@ -44,9 +47,9 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
-    height: 180px;
+   /* height: 180px;*/
     width: calc(290px + (700 - 290)*((100vw - 320px)/(1600-320)));
-    height: 250px;
+   /* height: 290px;*/
     text-align:left;
     margin-top: calc(15px + (50 - 15)*((100vw - 320px)/(1600-320)));
     margin-bottom: calc(15px + (50 - 15)*((100vw - 320px)/(1600-320)));
@@ -140,12 +143,15 @@
 }
 
 .cardQuote{
+    
     margin-left: auto;
     margin-right: auto;
     background-image: url(./data/imgs/backQuote.jpg);
     background-position: center;
     background-size: cover;
-    height: calc(870px + (600 - 870)*((100vw - 320px)/(1600-320)));
+   /* height: calc(870px + (600 - 870)*((100vw - 320px)/(1600-320)));*/
+   padding-top:5%;
+   padding-bottom:5%;
     display: flex;
     flex-direction: column;
     color: #262626;
