@@ -63,7 +63,7 @@
     margin:auto;
 }
 
-@media (max-width: 890px){
+@media (max-width: 1024px){
     .home p{
         color:rgb(197, 196, 196);
         margin:auto;
@@ -71,7 +71,7 @@
         padding-left: 0px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     .homeInfo{
         flex-direction: column;
         height: max-content;

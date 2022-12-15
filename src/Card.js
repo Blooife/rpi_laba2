@@ -70,7 +70,7 @@ function Card(){
       {
         phtData.gallery.map(p => (
           <Carousel.Item className="carouselImg">
-            <img
+            <img 
               src={require(`./data/${photographer.fileName}/${p}`)}
               alt=""
             />
