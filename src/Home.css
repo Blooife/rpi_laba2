@@ -10,6 +10,8 @@
     /*height: 500px;*/
     width: 100%;
     opacity: .9;
+    
+    padding: 2%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -19,7 +21,7 @@
 }
 
 .home h1{
-    padding-top: 40px;
+    /*padding-top: calc(10px + (40 - 10)*((100vw - 320px)/(1600-320)));*/
     color:#46acff;
     font-weight: bold;
     font-size: calc(25px + (80 - 25)*((100vw - 320px)/(1600-320)));
