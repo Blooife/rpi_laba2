@@ -7,7 +7,7 @@
 
 .home{
     background-image: url("./data/imgs/home_bg1.png");
-    height: 500px;
+    /*height: 500px;*/
     width: 100%;
     opacity: .9;
     background-repeat: no-repeat;
@@ -42,7 +42,8 @@
     background-image: url(./data/imgs/back.jpg);
     background-position: center;
     background-size: cover;
-    height:calc(870px + (600 - 870)*((100vw - 320px)/(1600-320)));
+    /*height:calc(870px + (600 - 870)*((100vw - 320px)/(1600-320)));*/
+    padding-bottom: 2%;
     display:flex;
     flex-direction: column;
     color: #262626;
@@ -61,44 +62,6 @@
 }
 .cardH img{
     margin:auto;
-}
-.cardText{
-    width: calc(300px + (1000 - 300)*((100vw - 320px)/(1600-320)));
-    text-align: justify;
-}
-.cardText>h1{
-    text-align:left;
-    font-weight: bold;
-    color: #46acff;
-    font-size: calc(25px + (80 - 25)*((100vw - 320px)/(1600-320)));
-    margin-top: calc(10px + (50 - 10)*((100vw - 320px)/(1600-320)));
-    margin-bottom: calc(0px + (25 - 0)*((100vw - 320px)/(1600-320)));
-}
-.cardText>h2{
-    text-align:left;
-    font-weight: bold;
-    color: #262626;
-    
-    font-size: calc(15px + (30 - 15)*((100vw - 320px)/(1600-320)));
-    margin-top: calc(15px + (50 - 15)*((100vw - 320px)/(1600-320)));
-    margin-bottom: calc(15px + (50 - 15)*((100vw - 320px)/(1600-320)));
-}
-.shortInfoWrap{
-    background-color: #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
-    height: 180px;
-    width: calc(290px + (700 - 290)*((100vw - 320px)/(1600-320)));
-    height: 250px;
-    text-align:left;
-    margin-top: calc(15px + (50 - 15)*((100vw - 320px)/(1600-320)));
-    margin-bottom: calc(15px + (50 - 15)*((100vw - 320px)/(1600-320)));
-}
-.cardText p{
-    font-weight: normal;
-    color: #262626;
-    font-size: calc(15px + (20 - 15)*((100vw - 320px)/(1600-320)));
 }
 @media (max-width: 600px) {
     .homeInfo{
