@@ -1,5 +1,18 @@
-.carouselImg{
+.carousel{
     text-align: center;
+    display: flex;
+}
+.carousel-inner{
+    margin:auto;
+}
+.carousel-image{
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+}
+.carousel-image img{
+    max-width: 100%;
+    margin:auto;
 }
 .cardInfo{
     margin-left: auto;

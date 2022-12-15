@@ -66,11 +66,11 @@ function Card(){
 
     <>
       <h2 className="title2">{t("gallery")}</h2>
-      <Carousel variant="dark" interval={1000}>
+      <Carousel  variant="dark" interval={000}>
       {
         phtData.gallery.map(p => (
-          <Carousel.Item className="carouselImg">
-            <img 
+          <Carousel.Item className="carousel-image">
+            <img
               src={require(`./data/${photographer.fileName}/${p}`)}
               alt=""
             />
